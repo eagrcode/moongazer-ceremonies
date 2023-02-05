@@ -9,6 +9,7 @@ import { Navbar } from "./components";
 
 // CSS
 import "./App.css";
+import "./normalize.css";
 
 function App() {
   return (

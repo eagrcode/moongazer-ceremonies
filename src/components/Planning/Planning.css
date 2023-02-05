@@ -1,0 +1,14 @@
+#planning-section {
+  background-color: var(--primary-bg-color);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: var(--padding-mobile);
+}
+
+.section-heading {
+  align-self: center;
+}

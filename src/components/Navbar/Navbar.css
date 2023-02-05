@@ -1,9 +1,3 @@
-/* variables */
-:root {
-  --nav-padding-mobile: 1rem;
-  --nav-padding: 3rem;
-}
-
 .navbar {
   position: sticky;
   top: 0;
@@ -13,8 +7,9 @@
   background-color: var(--primary-bg-color);
   color: black;
   height: 3rem;
-  padding: var(--nav-padding-mobile);
+  padding: var(--padding-mobile);
   z-index: 999;
+  border-bottom: solid 1px rgba(200, 200, 200, 0.3);
 }
 
 #logo {
@@ -31,7 +26,7 @@
   align-items: center;
   width: 100%;
   list-style: none;
-  padding: var(--nav-padding-mobile);
+  padding: var(--padding-mobile);
   background-color: var(--primary-bg-color);
   gap: 1rem;
   transform: translateY(-20rem);
@@ -45,4 +40,5 @@
 .nav-link {
   text-decoration: none;
   color: black;
+  font-size: 1.2rem;
 }
