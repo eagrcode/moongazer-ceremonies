@@ -1,6 +1,9 @@
-.navbar {
+header {
   position: sticky;
   top: 0;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +17,7 @@
 
 #logo {
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .nav-menu {

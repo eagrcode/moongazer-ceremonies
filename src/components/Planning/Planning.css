@@ -1,5 +1,6 @@
 #planning-section {
   background-color: var(--primary-bg-color);
+  padding: var(--padding) var(--padding-mobile);
 }
 
 .text-container {
@@ -7,6 +8,8 @@
   flex-direction: column;
   gap: 1rem;
   padding: var(--padding-mobile);
+  box-shadow: var(--container-shadow);
+  border-radius: var(--container-radius);
 }
 
 .section-heading {
