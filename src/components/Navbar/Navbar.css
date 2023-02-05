@@ -1,0 +1,48 @@
+/* variables */
+:root {
+  --nav-padding-mobile: 1rem;
+  --nav-padding: 3rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  color: black;
+  height: 3rem;
+  padding: var(--nav-padding-mobile);
+  z-index: 999;
+}
+
+#logo {
+  font-size: 1.2rem;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  padding: var(--nav-padding-mobile);
+  background-color: var(--primary-bg-color);
+  gap: 1rem;
+  transform: translateY(-20rem);
+  z-index: -1;
+}
+
+.nav-menu.active {
+  transform: translateY(0);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
