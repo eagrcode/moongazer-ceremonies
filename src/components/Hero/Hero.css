@@ -1,3 +1,30 @@
 .hero-container {
   display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  padding: 8rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: var(--primary-text-container-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-text-container p {
+  font-size: 1.6rem;
 }

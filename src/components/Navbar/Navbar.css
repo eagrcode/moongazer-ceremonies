@@ -1,6 +1,7 @@
 header {
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .navbar {
@@ -11,12 +12,11 @@ header {
   color: black;
   height: 3rem;
   padding: var(--padding-mobile);
-  z-index: 999;
   border-bottom: solid 1px rgba(200, 200, 200, 0.3);
 }
 
 #logo {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -34,7 +34,6 @@ header {
   background-color: var(--primary-bg-color);
   gap: 1rem;
   transform: translateY(-20rem);
-  z-index: -1;
 }
 
 .nav-menu.active {

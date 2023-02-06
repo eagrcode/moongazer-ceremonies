@@ -42,7 +42,7 @@ function Navbar() {
       <header>
         <nav className="navbar">
           <NavLink to="/" className="nav-link" id="logo">
-            Dee Celebrant
+            Moongazer Celebrant
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
