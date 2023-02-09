@@ -5,11 +5,14 @@
 /* variables */
 :root {
   --primary-bg-color: #dbfaf8;
+  --primary-text-color: hsl(176, 76%, 8%);
+  --main-btn-color: hsl(176, 76%, 20%, 0.7);
   --primary-text-container-color: hsl(176, 76%, 96%);
+
   --padding-mobile: 1rem;
   --padding: 3rem;
   --container-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  --container-radius: 5px;
+  --container-radius: 2px;
 }
 
 * {
@@ -21,13 +24,17 @@
 html {
   font-family: "Poppins", "Courgette", cursive, sans-serif;
   font-size: 100%;
-  letter-spacing: 1px;
-  line-height: 1.4rem;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
+}
+
+body {
+  color: var(--primary-text-color);
 }
 
 h2 {
   font-family: "Courgette", cursive;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
@@ -38,4 +45,31 @@ p {
 
 img {
   width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.content-section {
+  background-color: var(--primary-bg-color);
+  padding: var(--padding) var(--padding-mobile);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding);
+}
+
+.section-heading {
+  align-self: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--primary-text-container-color);
+  padding: var(--padding-mobile);
+  box-shadow: var(--container-shadow);
+  border-radius: var(--container-radius);
 }

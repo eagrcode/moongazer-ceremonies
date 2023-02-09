@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // libraries
 import { Outlet, NavLink } from "react-router-dom";
+import { BsChevronDown } from "react-icons/bs";
 
 // components
 import { Hamburger } from "../index";
@@ -51,14 +52,36 @@ function Navbar() {
                 Home
               </NavLink>
             </li>
+
             <li className="nav-item">
-              <NavLink to="/link2" className="nav-link">
-                Link 2
-              </NavLink>
+              <div className="dropdown-container">
+                <NavLink to="/ceremonies" className="nav-link" id="ceremonies-link">
+                  Ceremonies
+                </NavLink>
+                <BsChevronDown size={20} id="dropdown-icon" />
+              </div>
+              <ul className="ceremony-dropdown">
+                <li className="nav-item">
+                  <NavLink to="/wedding" className="nav-link">
+                    Weddings
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/renewal" className="nav-link">
+                    Marriage Renewal
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink to="/unity" className="nav-link">
+                    Unity
+                  </NavLink>
+                </li>
+              </ul>
             </li>
+
             <li className="nav-item">
               <NavLink to="/link3" className="nav-link">
-                Link 3
+                Contact
               </NavLink>
             </li>
             <li className="nav-item">

@@ -11,10 +11,9 @@ function Hero() {
         backgroundImage: `url(${Hero1})`,
       }}
     >
-      {/* <img className="hero-img" src={Hero1} /> */}
-      {/* <div className="hero-text-container">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-      </div> */}
+      <div className="hero-text-container">
+        <em id="tagline">I make good celebrant things</em>
+      </div>
     </div>
   );
 }

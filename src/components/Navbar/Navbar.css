@@ -39,9 +39,39 @@ header {
 .nav-menu.active {
   transform: translateY(0);
 }
+.nav-item {
+  text-align: center;
+  width: 100%;
+}
 
 .nav-link {
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
+}
+
+.dropdown-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdown-icon {
+  position: absolute;
+  right: 5rem;
+}
+
+.ceremony-dropdown {
+  display: none;
+  margin-top: 1rem;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceremony-dropdown.active {
+  display: flex;
 }
