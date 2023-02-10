@@ -48,37 +48,54 @@ function Navbar() {
     <>
       <header>
         <nav className="navbar">
-          <NavLink to="/" className="nav-link" id="logo">
+          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link" id="logo">
             Moongazer Celebrant
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
             <li className="nav-item">
-              <NavLink to="/" className="nav-link">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
               <div className="dropdown-top">
-                <NavLink to="/ceremonies" className="nav-link" id="ceremonies-link">
+                <NavLink
+                  onClick={isOpen ? toggleMenu : undefined}
+                  to="/ceremonies"
+                  className="nav-link"
+                  id="ceremonies-link"
+                >
                   Ceremonies
                 </NavLink>
                 <BsChevronDown onClick={toggleSubMenu} size={20} id="dropdown-icon" />
               </div>
               <ul className={`ceremony-dropdown ${isSubMenuOpen ? "active" : ""}`}>
                 <li className="nav-item">
-                  <NavLink to="/wedding" className="nav-link dropdown">
+                  <NavLink
+                    onClick={isOpen ? toggleMenu : undefined}
+                    to="/wedding"
+                    className="nav-link dropdown"
+                  >
                     Weddings
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/renewal" className="nav-link dropdown">
+                  <NavLink
+                    onClick={isOpen ? toggleMenu : undefined}
+                    to="/renewal"
+                    className="nav-link dropdown"
+                  >
                     Marriage Renewal
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/unity" className="nav-link dropdown">
+                  <NavLink
+                    onClick={isOpen ? toggleMenu : undefined}
+                    to="/unity"
+                    className="nav-link dropdown"
+                  >
                     Unity
                   </NavLink>
                 </li>
@@ -86,12 +103,12 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <NavLink to="/link3" className="nav-link">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/link3" className="nav-link">
                 Contact
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/link4" className="nav-link">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/link4" className="nav-link">
                 Link 4
               </NavLink>
             </li>
