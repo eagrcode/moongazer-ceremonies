@@ -1,8 +1,10 @@
 // components
-import { Hero, About, Planning, ImageContainer } from "../../components";
+import { Hero, ImageContainer } from "../../components";
+
+// sections
+import { About, Planning } from "../../pages";
 
 // images
-import Borat2 from "../../assets/borat 2.jpg";
 import Jump from "../../assets/jump.jpg";
 
 function Homepage() {

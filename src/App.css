@@ -4,10 +4,10 @@
 
 /* variables */
 :root {
-  --primary-bg-color: #dbfaf8;
+  --primary-bg-color: hsl(176, 76%, 90%);
   --primary-text-color: hsl(176, 76%, 8%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
-  --primary-text-container-color: hsl(176, 76%, 96%);
+  --primary-text-container-color: hsl(176, 76%, 95%);
   --mobile-nav-height: 3.5rem;
   --padding-mobile: 1rem;
   --padding: 3rem;

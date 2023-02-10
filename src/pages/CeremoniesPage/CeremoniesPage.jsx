@@ -1,5 +1,7 @@
+import { Ceremonies } from "../../pages";
+
 function CeremoniesPage() {
-  return <div>CeremoniesPage</div>;
+  return <Ceremonies />;
 }
 
 export default CeremoniesPage;
