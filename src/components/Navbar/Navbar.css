@@ -10,7 +10,7 @@ header {
   align-items: center;
   background-color: var(--primary-bg-color);
   color: black;
-  height: 3rem;
+  height: var(--mobile-nav-height);
   padding: var(--padding-mobile);
   border-bottom: solid 1px rgba(200, 200, 200, 0.3);
 }
@@ -22,35 +22,37 @@ header {
 
 .nav-menu {
   position: absolute;
-  top: 3rem;
+  top: var(--mobile-nav-height);
   left: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
+  height: calc(100vh - var(--mobile-nav-height));
   width: 100%;
+
   list-style: none;
   padding: var(--padding-mobile);
   background-color: var(--primary-bg-color);
-  gap: 1rem;
-  transform: translateY(-20rem);
 }
 
 .nav-menu.active {
-  transform: translateY(0);
+  display: flex;
 }
+
 .nav-item {
   text-align: center;
   width: 100%;
 }
 
 .nav-link {
+  display: block;
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
+  width: 100%;
 }
 
-.dropdown-container {
+.dropdown-top {
   width: 100%;
   display: flex;
   position: relative;
@@ -58,9 +60,14 @@ header {
   align-items: center;
 }
 
+#ceremonies-link {
+  margin-left: 30px;
+  width: auto;
+}
+
 #dropdown-icon {
-  position: absolute;
-  right: 5rem;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .ceremony-dropdown {
@@ -68,10 +75,12 @@ header {
   margin-top: 1rem;
   gap: 1rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .ceremony-dropdown.active {
   display: flex;
+}
+
+.dropdown {
+  font-size: 1rem;
 }

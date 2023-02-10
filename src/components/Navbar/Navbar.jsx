@@ -12,13 +12,19 @@ import { Hamburger } from "../index";
 import "./Navbar.css";
 
 function Navbar() {
-  // State
+  // state
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
   // const [isScrolling, setIsScrolling] = useState(false);
 
   // Toggle open nav menu
   function toggleMenu() {
     setIsOpen(!isOpen);
+  }
+
+  // Toggle open sub nav menu
+  function toggleSubMenu() {
+    setIsSubMenuOpen(!isSubMenuOpen);
   }
 
   // Set Nav bg color on scroll
@@ -46,33 +52,33 @@ function Navbar() {
             Moongazer Celebrant
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
+
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
             <li className="nav-item">
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
             </li>
-
             <li className="nav-item">
-              <div className="dropdown-container">
+              <div className="dropdown-top">
                 <NavLink to="/ceremonies" className="nav-link" id="ceremonies-link">
                   Ceremonies
                 </NavLink>
-                <BsChevronDown size={20} id="dropdown-icon" />
+                <BsChevronDown onClick={toggleSubMenu} size={20} id="dropdown-icon" />
               </div>
-              <ul className="ceremony-dropdown">
+              <ul className={`ceremony-dropdown ${isSubMenuOpen ? "active" : ""}`}>
                 <li className="nav-item">
-                  <NavLink to="/wedding" className="nav-link">
+                  <NavLink to="/wedding" className="nav-link dropdown">
                     Weddings
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/renewal" className="nav-link">
+                  <NavLink to="/renewal" className="nav-link dropdown">
                     Marriage Renewal
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to="/unity" className="nav-link">
+                  <NavLink to="/unity" className="nav-link dropdown">
                     Unity
                   </NavLink>
                 </li>
