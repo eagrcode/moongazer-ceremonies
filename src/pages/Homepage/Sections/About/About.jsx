@@ -4,10 +4,17 @@ import "./About.css";
 // components
 import { MainBtn } from "../../../../components";
 
+// libraries
+import { Link } from "react-router-dom";
+
+// images
+import Dee from "../../../../assets/dee-robinson-celebrant.jpeg";
+
 function TextContainer({ title }) {
   return (
     <section className="content-section about">
       <div className="text-container">
+        <img id="dee-pic" src={Dee} alt="dee-robinson-moongazer-celebrant" />
         <h2 className="section-heading">{title}</h2>
         <p className="section-content">
           Although there is no formal requirement for a celebrant to undertake accredited training,
@@ -24,7 +31,9 @@ function TextContainer({ title }) {
           day!
         </p>
       </div>
-      <MainBtn text={"Ceremonies"} />
+      <Link className="link-btn" to={"/ceremonies"}>
+        <MainBtn text={"Ceremonies"} />
+      </Link>
     </section>
   );
 }

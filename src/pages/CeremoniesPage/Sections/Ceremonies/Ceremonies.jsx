@@ -9,8 +9,9 @@ function Ceremonies() {
   return (
     <section className="content-section ceremonies">
       <CeremonyCard title={"Weddings"} img={Wedding} />
-      <CeremonyCard title={"Marriage Renewal"} img={CakeTable} />
+      <CeremonyCard title={"Vow Renewal"} img={CakeTable} />
       <CeremonyCard title={"Unity"} img={Table} />
+      <CeremonyCard title={"Naming"} img={Table} />
     </section>
   );
 }

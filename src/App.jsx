@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 
 // pages
-import { Homepage, CeremoniesPage, WeddingPage, MarriageRenewalPage, UnityPage } from "./pages";
+import { Homepage, CeremoniesPage, MarriageRenewalPage, UnityPage, WeddingPage } from "./pages";
 
 // components
 import { Navbar } from "./components";
@@ -16,11 +16,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Navbar />}>
         <Route index element={<Homepage />} />
-        <Route path="ceremonies" element={<CeremoniesPage />}>
-          <Route path="wedding" element={<WeddingPage />} />
-          <Route path="renewal" element={<MarriageRenewalPage />} />
-          <Route path="unity" element={<UnityPage />} />
-        </Route>
+        <Route path="ceremonies" element={<CeremoniesPage />} />
+        <Route path="wedding" element={<WeddingPage />} />
+        <Route path="renewal" element={<MarriageRenewalPage />} />
+        <Route path="unity" element={<UnityPage />} />
       </Route>
     </Routes>
   );

@@ -1,13 +1,14 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* variables */
 :root {
   --primary-bg-color: hsl(176, 76%, 90%);
   --primary-text-color: hsl(176, 76%, 8%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
-  --primary-text-container-color: hsl(176, 76%, 95%);
+  --primary-text-container-color: hsl(176, 76%, 97%);
   --mobile-nav-height: 3.5rem;
   --padding-mobile: 1rem;
   --padding: 3rem;
@@ -22,7 +23,6 @@
 }
 
 html {
-  font-family: "Poppins", "Courgette", cursive, sans-serif;
   font-size: 100%;
   letter-spacing: 0.2px;
   line-height: 1.5rem;
@@ -30,6 +30,13 @@ html {
 
 body {
   color: var(--primary-text-color);
+  font-family: "Figtree", sans-serif;
+}
+
+h1 {
+  font-family: "Courgette", cursive;
+  font-size: 2.2rem;
+  font-weight: 500;
 }
 
 h2 {
@@ -41,6 +48,10 @@ h2 {
 p {
   font-size: 1rem;
   font-weight: 300;
+}
+
+em {
+  opacity: 0.5;
 }
 
 img {
@@ -64,12 +75,23 @@ ul {
   align-self: center;
 }
 
+.section-content {
+  align-self: flex-start;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   background-color: var(--primary-text-container-color);
   padding: var(--padding-mobile);
   box-shadow: var(--container-shadow);
   border-radius: var(--container-radius);
+}
+
+.no-card {
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
 }

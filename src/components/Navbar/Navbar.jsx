@@ -38,11 +38,11 @@ function Navbar() {
   // window.addEventListener("scroll", handleScroll);
 
   // disable body scroll if mobile menu open
-  // if (isOpen) {
-  //   document.body.style.overflow = "hidden";
-  // } else {
-  //   document.body.style.overflow = "visible";
-  // }
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "visible";
+  }
 
   return (
     <>
@@ -87,7 +87,7 @@ function Navbar() {
                     to="/renewal"
                     className="nav-link dropdown"
                   >
-                    Marriage Renewal
+                    Vow Renewal
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -99,6 +99,15 @@ function Navbar() {
                     Unity
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink
+                    onClick={isOpen ? toggleMenu : undefined}
+                    to="/naming"
+                    className="nav-link dropdown"
+                  >
+                    Naming
+                  </NavLink>
+                </li>
               </ul>
             </li>
 
@@ -108,8 +117,13 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/link4" className="nav-link">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
                 Link 4
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
+                Link 5
               </NavLink>
             </li>
           </ul>

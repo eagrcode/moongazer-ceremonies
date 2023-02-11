@@ -1,4 +1,10 @@
+// libraries
+import { Link } from "react-router-dom";
+
+// components
 import { MainBtn } from "../../../../components";
+
+// styles
 import "./Planning.css";
 
 function Planning({ title }) {
@@ -17,7 +23,9 @@ function Planning({ title }) {
           perfect day.
         </p>
       </div>
-      <MainBtn text={"Contact Me"} />
+      <Link to={"/contact"}>
+        <MainBtn text={"Contact Me"} />
+      </Link>
     </section>
   );
 }

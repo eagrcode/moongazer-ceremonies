@@ -6,4 +6,7 @@
   border: solid 2px var(--primary-text-color);
   font-size: 1.4rem;
   border-radius: 2px;
+
+  cursor: pointer;
+  transition: all 0.3s;
 }
