@@ -24,7 +24,7 @@ function Planning({ title }) {
         </p>
       </div>
       <Link to={"/contact"}>
-        <MainBtn text={"Contact Me"} />
+        <MainBtn text={"Contact Me"} type={"btn-dark"} />
       </Link>
     </section>
   );

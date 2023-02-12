@@ -8,10 +8,10 @@ import Table from "../../../../assets/table.jpg";
 function Ceremonies() {
   return (
     <section className="content-section ceremonies">
-      <CeremonyCard title={"Weddings"} img={Wedding} />
-      <CeremonyCard title={"Vow Renewal"} img={CakeTable} />
-      <CeremonyCard title={"Unity"} img={Table} />
-      <CeremonyCard title={"Naming"} img={Table} />
+      <CeremonyCard title={"Weddings"} img={Wedding} path={"/wedding"} />
+      <CeremonyCard title={"Vow Renewal"} img={CakeTable} path={"/renewal"} />
+      <CeremonyCard title={"Unity"} img={Table} path={"/unity"} />
+      <CeremonyCard title={"Naming"} img={Table} path={"/naming"} />
     </section>
   );
 }

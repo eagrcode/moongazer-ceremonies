@@ -5,10 +5,12 @@
 
 /* variables */
 :root {
-  --primary-bg-color: hsl(176, 76%, 90%);
-  --primary-text-color: hsl(176, 76%, 8%);
+  --primary-bg-color: hsl(175, 40%, 97%);
+  --secondary-bg-color: hsl(233, 21%, 24%);
+  --primary-text-color: hsl(233, 21%, 10%);
+  --secondary-text-color: hsl(174, 41%, 90%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
-  --primary-text-container-color: hsl(176, 76%, 97%);
+  --primary-text-container-color: hsl(176, 76%, 99%);
   --mobile-nav-height: 3.5rem;
   --padding-mobile: 1rem;
   --padding: 3rem;
@@ -35,18 +37,18 @@ body {
 
 h1 {
   font-family: "Courgette", cursive;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
 h2 {
   font-family: "Courgette", cursive;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
@@ -58,9 +60,9 @@ img {
   width: 100%;
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 .content-section {
   background-color: var(--primary-bg-color);
@@ -84,10 +86,10 @@ ul {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: var(--primary-text-container-color);
+  /* background-color: var(--primary-text-container-color);
   padding: var(--padding-mobile);
   box-shadow: var(--container-shadow);
-  border-radius: var(--container-radius);
+  border-radius: var(--container-radius); */
 }
 
 .no-card {

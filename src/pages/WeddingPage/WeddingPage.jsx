@@ -22,27 +22,27 @@ function WeddingPage() {
           </p>
         </div>
       </section>
-      <section className="content-section">
+      <section className="content-section included">
         <div className="text-container no-card">
-          <p className="section-content">Included in this Ceremony</p>
+          <strong className="section-content">Included in this Ceremony</strong>
           <ul className="wedding-list">
             <li className="wedding-list-item">
-              - A ceremony written spicifically for you, which tells your love story
+              A ceremony written spicifically for you, which tells your love story
             </li>
             <li className="wedding-list-item">
-              - Symbolic rituals and unique personal aspects can be included.
+              Symbolic rituals and unique personal aspects can be included.
             </li>
             <li className="wedding-list-item">
-              - A beautifully presented souvenir script as a keepsake of the day.
+              A beautifully presented souvenir script as a keepsake of the day.
             </li>
-            <li className="wedding-list-item">- All meetings, email and phone contact.</li>
+            <li className="wedding-list-item">All meetings, email and phone contact.</li>
             <li className="wedding-list-item">
-              - Overnight accommodation and travel are not included.
+              Overnight accommodation and travel are not included.
             </li>
-            <li className="wedding-list-item">- Packages from £650</li>
+            <li className="wedding-list-item">Packages from £650</li>
           </ul>
         </div>
-        <MainBtn text={"Contact Me"} />
+        <MainBtn text={"Contact Me"} type={"btn-light"} />
       </section>
     </>
   );

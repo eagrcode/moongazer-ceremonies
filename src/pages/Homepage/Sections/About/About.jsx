@@ -32,7 +32,7 @@ function TextContainer({ title }) {
         </p>
       </div>
       <Link className="link-btn" to={"/ceremonies"}>
-        <MainBtn text={"Ceremonies"} />
+        <MainBtn text={"Ceremonies"} type={"btn-dark"} />
       </Link>
     </section>
   );
