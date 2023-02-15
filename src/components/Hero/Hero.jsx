@@ -8,7 +8,7 @@ function Hero() {
     <div
       className="hero-container"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05), hsl(175, 50%, 95%)), url(${Hero1})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05), hsl(200, 50%, 95%)), url(${Hero1})`,
       }}
     >
       <div className="hero-text-container">

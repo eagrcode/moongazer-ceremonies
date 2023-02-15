@@ -10,8 +10,9 @@
 }
 
 .main-btn.btn-dark {
-  color: var(--primary-text-color);
-  border: solid 2px var(--primary-text-color);
+  color: var(--secondary-text-color);
+  /* border: solid 2px var(--primary-text-color); */
+  background-color: var(--secondary-bg-color);
 }
 
 .main-btn.btn-light {

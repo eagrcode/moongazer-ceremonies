@@ -1,0 +1,16 @@
+.ceremonies-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--padding);
+  max-width: 50rem;
+}
+
+.ceremonies-grid .image-container {
+  max-height: 250px;
+}
+
+@media (min-width: 768px) {
+  .ceremonies-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

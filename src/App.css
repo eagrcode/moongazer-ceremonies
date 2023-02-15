@@ -6,7 +6,7 @@
 
 /* variables */
 :root {
-  --primary-bg-color: hsl(175, 50%, 95%);
+  --primary-bg-color: hsl(200, 50%, 95%);
   --secondary-bg-color: hsl(233, 21%, 24%);
   --primary-text-color: hsl(233, 21%, 10%);
   --secondary-text-color: hsl(174, 41%, 90%);
@@ -87,6 +87,7 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 50rem;
   /* background-color: var(--primary-text-container-color);
   padding: var(--padding-mobile);
   box-shadow: var(--container-shadow);
