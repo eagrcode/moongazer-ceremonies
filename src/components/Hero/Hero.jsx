@@ -1,18 +1,18 @@
 // CSS
 import "./Hero.css";
 
-import Hero1 from "../../assets/hero1.jpg";
+import Hero1 from "../../assets/cake-table.jpg";
 
 function Hero() {
   return (
     <div
       className="hero-container"
       style={{
-        backgroundImage: `url(${Hero1})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05), hsl(175, 50%, 95%)), url(${Hero1})`,
       }}
     >
       <div className="hero-text-container">
-        <em id="tagline">I make good celebrant things</em>
+        <h1 id="hero-text">Moongazer Celebrant</h1>
       </div>
     </div>
   );

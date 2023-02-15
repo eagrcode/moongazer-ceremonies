@@ -4,21 +4,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: calc(100vh - var(--mobile-nav-height));
 
-  padding: 8rem;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.hero-container::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(60, 60, 60, 0.6);
 }
 
 .hero-text-container {
@@ -36,7 +25,12 @@
   margin: auto;
   text-align: center;
   padding: 0 1rem;
-  text-shadow: 2px 2px 8px #000000;
+  text-shadow: 1px 1px 3px #0000008a;
+}
+
+#hero-text {
+  font-size: 5rem;
+  color: var(--primary-bg-color);
 }
 
 #tagline {
