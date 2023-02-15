@@ -121,11 +121,6 @@ function Navbar() {
                 Link 4
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
-                Link 5
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </header>

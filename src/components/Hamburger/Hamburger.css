@@ -23,3 +23,9 @@
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-7px) rotateZ(-45deg);
 }
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}

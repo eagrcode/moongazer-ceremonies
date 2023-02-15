@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-bg-color);
-  color: black;
+
   height: var(--mobile-nav-height);
   padding: var(--padding-mobile);
   border-bottom: solid 1px rgba(200, 200, 200, 0.3);
@@ -19,6 +19,7 @@ header {
   font-size: 1rem;
   font-weight: 600;
   width: auto;
+  color: var(--primary-text-color);
 }
 
 .nav-menu {
@@ -36,6 +37,10 @@ header {
   background-color: var(--primary-bg-color);
 }
 
+.nav-menu a {
+  opacity: 0.9;
+}
+
 .nav-menu.active {
   display: flex;
 }
@@ -48,9 +53,8 @@ header {
 .nav-link {
   display: block;
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
-  font-weight: 300;
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
   width: 100%;
 }
 
@@ -85,4 +89,69 @@ header {
 
 .dropdown {
   font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: var(--nav-padding-lg);
+  }
+  .nav-menu {
+    position: relative;
+    display: flex;
+    min-height: 100%;
+    width: fit-content;
+    top: 0;
+    flex-direction: row;
+    padding: 0;
+    overflow: visible;
+  }
+
+  #logo {
+    font-size: 1.4rem;
+  }
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    position: relative;
+    padding: 5px;
+    border-radius: 2px;
+  }
+
+  .nav-item.dropwdown {
+    flex-direction: column;
+  }
+
+  .nav-link:hover {
+    color: black;
+    opacity: 1;
+  }
+
+  #ceremonies-link {
+    margin: 0;
+  }
+
+  #dropdown-icon {
+    margin: 0;
+  }
+
+  .dropdown-top {
+    gap: 5px;
+  }
+
+  .ceremony-dropdown {
+    position: absolute;
+    background-color: var(--primary-bg-color);
+
+    margin: calc(var(--mobile-nav-height) - var(--padding-mobile)) var(--padding-mobile) 0 100%;
+    /* margin-left: 100%;
+    margin-right: var(--padding-mobile);
+
+    margin-top: calc(var(--mobile-nav-height) - var(--padding-mobile)); */
+    width: calc(200% + var(--padding-mobile));
+    text-align: left;
+    align-items: flex-start;
+    padding: var(--padding-mobile);
+  }
 }
