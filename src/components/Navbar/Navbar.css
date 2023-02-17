@@ -119,9 +119,9 @@ header {
     border-radius: 2px;
   }
 
-  .nav-item.dropwdown {
-    flex-direction: column;
-  }
+  /* #dropdown-icon {
+    display: none;
+  } */
 
   .nav-link:hover {
     color: black;

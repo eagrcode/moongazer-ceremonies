@@ -6,7 +6,7 @@
 
 /* variables */
 :root {
-  --primary-bg-color: hsl(200, 50%, 95%);
+  --primary-bg-color: hsl(175, 40%, 95%);
   --secondary-bg-color: hsl(233, 21%, 24%);
   --primary-text-color: hsl(233, 21%, 10%);
   --secondary-text-color: hsl(174, 41%, 90%);

@@ -49,7 +49,7 @@ function Navbar() {
       <header>
         <nav className="navbar">
           <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link" id="logo">
-            Moongazer Celebrant
+            Moongazer Ceremonies
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 

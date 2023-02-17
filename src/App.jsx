@@ -2,7 +2,14 @@
 import { Routes, Route } from "react-router-dom";
 
 // pages
-import { Homepage, CeremoniesPage, MarriageRenewalPage, UnityPage, WeddingPage } from "./pages";
+import {
+  Homepage,
+  CeremoniesPage,
+  MarriageRenewalPage,
+  UnityPage,
+  WeddingPage,
+  NamingPage,
+} from "./pages";
 
 // components
 import { Navbar, ScrollToTop } from "./components";
@@ -22,6 +29,7 @@ function App() {
           <Route path="wedding" element={<WeddingPage />} />
           <Route path="renewal" element={<MarriageRenewalPage />} />
           <Route path="unity" element={<UnityPage />} />
+          <Route path="naming" element={<NamingPage />} />
         </Route>
       </Routes>
     </>

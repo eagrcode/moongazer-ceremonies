@@ -10,7 +10,6 @@ import Wedding from "../../assets/wedding-card.jpg";
 function WeddingPage() {
   return (
     <>
-      <ImageContainer img={Wedding} />
       <section className="content-section weddings">
         <div className="text-container no-card">
           <h1 className="section-heading">Weddings</h1>
@@ -24,7 +23,7 @@ function WeddingPage() {
       </section>
       <section className="content-section included">
         <div className="text-container no-card">
-          <strong className="section-content">Included in this Ceremony</strong>
+          <h2>Included in this Ceremony</h2>
           <ul className="wedding-list">
             <li className="wedding-list-item">
               A ceremony written spicifically for you, which tells your love story

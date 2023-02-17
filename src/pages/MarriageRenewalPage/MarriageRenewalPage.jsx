@@ -10,27 +10,20 @@ import Wedding from "../../assets/wedding-card.jpg";
 function MarriageRenewalPage() {
   return (
     <>
-      <ImageContainer img={Wedding} />
       <section className="content-section weddings">
         <div className="text-container no-card">
           <h1 className="section-heading">Vow Renewal</h1>
-          <em>Your day, your choice, your dreams</em>
+          <em>Relive the Love!</em>
           <p className="section-content">
-            I will spend time with you, creating a personal ceremony that truly reflects both of you
-            and where you are in your relationship. You may now have a family that you would like to
-            be included, and I can liaise with them to help explain your thoughts and ideas.
-          </p>
-          <p className="section-content">
-            Couples often mark these occasions by rededicating their rings, including a unity
-            ceremony, writing their own promises and exchange gifts. You may like a big party or
-            prefer an intimate ceremony involving just the two of you. We will chat through your
-            plans and together find what feels most comfortable and the best reflection of you.
+            This is the perfect way to celebrate your special anniversary and relive your wedding
+            all over again. We can work together to create a personal ceremony either repeating your
+            original bows or making new ones.
           </p>
         </div>
       </section>
       <section className="content-section included">
         <div className="text-container no-card">
-          <strong className="section-content">Included in this Ceremony</strong>
+          <h2>Included in this Ceremony</h2>
           <ul className="wedding-list">
             <li className="wedding-list-item">
               A ceremony written spicifically for you, which tells your love story
