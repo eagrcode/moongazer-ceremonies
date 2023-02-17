@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 400px;
   background-color: var(--primary-text-container-color);
   padding: var(--padding-mobile) 0;
   border-radius: var(--container-radius);
   box-shadow: var(--container-shadow);
+  transition: all 0.2s;
 }
 
 .ceremony-card-text {
@@ -15,4 +17,10 @@
 
 .ceremony-card button {
   width: auto;
+}
+
+@media (min-width: 768px) {
+  .ceremony-card:hover {
+    transform: scale(1.03);
+  }
 }

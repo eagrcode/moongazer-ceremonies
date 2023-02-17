@@ -4,3 +4,4 @@ export { default as Hero } from "./Hero/Hero";
 export { default as ImageContainer } from "./ImageContainer/ImageContainer";
 export { default as MainBtn } from "./Buttons/MainBtn/MainBtn";
 export { default as CeremonyCard } from "./CeremonyCard/CeremonyCard";
+export { default as ScrollToTop } from "./ScrollToTop";

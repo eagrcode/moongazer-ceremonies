@@ -12,7 +12,7 @@ function Ceremonies() {
   return (
     <section className="content-section ceremonies">
       <div className="ceremonies-grid">
-        <CeremonyCard title={"Weddings"} img={Wedding} path={"/wedding"} />
+        <CeremonyCard title={"Weddings"} img={CakeTable} path={"/wedding"} />
         <CeremonyCard title={"Vow Renewal"} img={CakeTable} path={"/renewal"} />
         <CeremonyCard title={"Unity"} img={Table} path={"/unity"} />
         <CeremonyCard title={"Naming"} img={Table} path={"/naming"} />

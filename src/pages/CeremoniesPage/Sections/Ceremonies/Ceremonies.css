@@ -5,9 +5,9 @@
   max-width: 50rem;
 }
 
-.ceremonies-grid .image-container {
+/* .ceremonies-grid .image-container {
   max-height: 250px;
-}
+} */
 
 @media (min-width: 768px) {
   .ceremonies-grid {

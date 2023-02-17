@@ -99,3 +99,9 @@ img {
   background-color: transparent;
   box-shadow: none;
 }
+
+@media (min-width: 768px) {
+  .content-section {
+    padding: var(--padding) var(--padding);
+  }
+}
