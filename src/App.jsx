@@ -12,7 +12,7 @@ import {
 } from "./pages";
 
 // components
-import { Navbar, ScrollToTop } from "./components";
+import { Navbar, ScrollToTop, Footer } from "./components";
 
 // styles
 import "./App.css";
@@ -32,6 +32,7 @@ function App() {
           <Route path="naming" element={<NamingPage />} />
         </Route>
       </Routes>
+      <Footer />
     </>
   );
 }

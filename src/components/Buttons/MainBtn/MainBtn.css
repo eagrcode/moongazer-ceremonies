@@ -4,14 +4,13 @@
 
   font-size: 1.4rem;
   border-radius: 2px;
-
+  border: transparent;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 .main-btn.btn-dark {
   color: var(--secondary-text-color);
-  /* border: solid 2px var(--primary-text-color); */
+
   background-color: var(--secondary-bg-color);
 }
 

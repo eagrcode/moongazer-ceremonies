@@ -8,11 +8,11 @@ function Hero() {
     <div
       className="hero-container"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.05), hsl(175, 40%, 95%)), url(${Hero1})`,
+        backgroundImage: `linear-gradient(hsl(175, 40%, 95%, 0.1), hsl(175, 40%, 95%)), url(${Hero1})`,
       }}
     >
       <div className="hero-text-container">
-        <h1 id="hero-text">Moongazer Ceremonies</h1>
+        <h1 id="hero-text">Moon Gazer Ceremonies</h1>
       </div>
     </div>
   );

@@ -1,0 +1,22 @@
+.footer-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding);
+  gap: 1rem;
+}
+
+.footer-nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link.footer {
+  font-size: 1rem;
+}
+
+.hitched-container {
+  width: 100px;
+}
