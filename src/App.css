@@ -38,13 +38,14 @@ body {
 
 h1 {
   font-family: "Dancing Script", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+
+  width: max-content;
 }
 
 p {
@@ -55,6 +56,14 @@ p {
 
 em {
   opacity: 0.5;
+}
+
+a {
+  color: inherit;
+}
+
+q {
+  font-family: "Times New Roman", serif;
 }
 
 img {
@@ -74,18 +83,11 @@ img {
   gap: var(--padding);
 }
 
-.section-heading {
-  align-self: center;
-}
-
-.section-content {
-  align-self: flex-start;
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   max-width: 50rem;
   /* background-color: var(--primary-text-container-color);

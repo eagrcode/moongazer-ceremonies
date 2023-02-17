@@ -35,7 +35,9 @@ function Footer() {
             </NavLink>
           </li>
         </ul>
-        <AiFillInstagram size={30} />
+        <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
+          <AiFillInstagram size={30} />
+        </a>
         <div className="hitched-container">
           <a rel="nofollow" href="https://www.hitched.co.uk" title="Hitched.co.uk">
             <img
