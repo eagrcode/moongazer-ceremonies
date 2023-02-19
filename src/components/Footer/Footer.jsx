@@ -39,7 +39,7 @@ function Footer() {
           <AiFillInstagram size={30} />
         </a>
         <div className="hitched-container">
-          <a rel="nofollow" href="https://www.hitched.co.uk" title="Hitched.co.uk">
+          <a rel="nofollow" target="_blank" href="https://www.hitched.co.uk" title="Hitched.co.uk">
             <img
               alt="Hitched.co.uk"
               src="https://www.hitched.co.uk/images/sellos/partner--gg322007.png"

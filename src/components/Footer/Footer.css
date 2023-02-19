@@ -1,3 +1,7 @@
+footer {
+  background-color: var(--primary-text-container-color);
+}
+
 .footer-navbar {
   display: flex;
   flex-direction: column;
