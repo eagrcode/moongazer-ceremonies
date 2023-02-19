@@ -8,7 +8,7 @@ import { Hero, ImageContainer } from "../../components";
 import { About, Planning } from "../../pages";
 
 // images
-import Jump from "../../assets/jump.jpg";
+import Jump from "../../assets/Jump cropped.jpg";
 
 function Homepage() {
   return (
