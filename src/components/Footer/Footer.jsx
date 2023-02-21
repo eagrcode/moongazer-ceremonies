@@ -46,7 +46,7 @@ function Footer() {
             <a
               rel="nofollow"
               target="_blank"
-              href="https://www.hitched.co.uk"
+              href="https://www.hitched.co.uk/wedding-celebrants/moon-gazer-ceremonies_322007.htm"
               title="Hitched.co.uk"
             >
               <img
