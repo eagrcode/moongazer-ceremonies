@@ -12,8 +12,8 @@ function UnityPage() {
     <>
       <section className="content-section weddings">
         <div className="text-container no-card">
-          <h1 className="section-heading">Commitment Ceremony</h1>
-          <em>Your day, your choice, your dreams</em>
+          <h1 className="section-heading">Commitment</h1>
+          <em>Commited in Love and Life</em>
           <p className="section-content">
             If you would like to celebrate your life-long commitment to each other, without the
             legalities, this is the ceremony for you. A commitment or affirmation ceremony allows

@@ -30,6 +30,8 @@
 html {
   font-size: 100%;
   letter-spacing: 0.5px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--mobile-nav-height);
 }
 
 body {

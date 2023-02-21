@@ -5,6 +5,9 @@ import "./Footer.css";
 import { NavLink } from "react-router-dom";
 import { AiFillInstagram } from "react-icons/ai";
 
+// images
+import AOIC from "../../assets/AOIC-logo.jpg";
+
 function Footer() {
   return (
     <footer>
@@ -38,13 +41,23 @@ function Footer() {
         <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
           <AiFillInstagram size={30} />
         </a>
-        <div className="hitched-container">
-          <a rel="nofollow" target="_blank" href="https://www.hitched.co.uk" title="Hitched.co.uk">
-            <img
-              alt="Hitched.co.uk"
-              src="https://www.hitched.co.uk/images/sellos/partner--gg322007.png"
-            />
-          </a>
+        <div className="bottom-footer">
+          <div className="hitched-container">
+            <a
+              rel="nofollow"
+              target="_blank"
+              href="https://www.hitched.co.uk"
+              title="Hitched.co.uk"
+            >
+              <img
+                alt="Hitched.co.uk"
+                src="https://www.hitched.co.uk/images/sellos/partner--gg322007.png"
+              />
+            </a>
+          </div>
+          <div className="aoic-container">
+            <img src={AOIC} alt="AOIC-certification" />
+          </div>
         </div>
       </nav>
     </footer>

@@ -12,7 +12,7 @@ import Dee from "../../../../assets/dee-robinson-celebrant.jpeg";
 
 function TextContainer({ title }) {
   return (
-    <section className="content-section about">
+    <section id="to-about" className="content-section about">
       <img id="dee-pic" src={Dee} alt="dee-robinson-moongazer-celebrant" />
       <div className="text-container">
         <h2 className="section-heading">{title}</h2>

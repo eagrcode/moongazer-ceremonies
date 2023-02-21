@@ -154,5 +154,6 @@ header {
     text-align: left;
     align-items: flex-start;
     padding: var(--padding-mobile);
+    box-shadow: var(--container-shadow);
   }
 }

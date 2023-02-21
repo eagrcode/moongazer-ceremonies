@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // libraries
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
 
 // components
@@ -97,7 +97,7 @@ function Navbar() {
                     to="/unity"
                     className="nav-link dropdown"
                   >
-                    Unity
+                    Commitment
                   </NavLink>
                 </li>
                 <li className="nav-item">
@@ -112,13 +112,13 @@ function Navbar() {
               </ul>
             </li>
             <li className="nav-item">
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
+              <a onClick={isOpen ? toggleMenu : undefined} href="/#to-about" className="nav-link">
                 About
-              </NavLink>
+              </a>
             </li>
 
             <li className="nav-item">
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/link3" className="nav-link">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
                 Contact
               </NavLink>
             </li>

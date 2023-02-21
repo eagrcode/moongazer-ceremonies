@@ -21,6 +21,21 @@ footer {
   font-size: 1rem;
 }
 
+.bottom-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .hitched-container {
   width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.aoic-container {
+  width: 50px;
+  display: flex;
+  align-items: center;
 }
