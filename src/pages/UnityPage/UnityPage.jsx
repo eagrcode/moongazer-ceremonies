@@ -12,7 +12,7 @@ function UnityPage() {
     <>
       <section className="content-section weddings">
         <div className="text-container no-card">
-          <h1 className="section-heading">Unity Ceremony</h1>
+          <h1 className="section-heading">Commitment Ceremony</h1>
           <em>Your day, your choice, your dreams</em>
           <p className="section-content">
             If you would like to celebrate your life-long commitment to each other, without the
@@ -36,7 +36,7 @@ function UnityPage() {
           <h2>Included in this Ceremony</h2>
           <ul className="wedding-list">
             <li className="wedding-list-item">
-              A ceremony written spicifically for you, which tells your love story
+              A ceremony written specifically for you, which tells your love story
             </li>
             <li className="wedding-list-item">
               Symbolic rituals and unique personal aspects can be included.

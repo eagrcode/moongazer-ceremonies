@@ -59,6 +59,7 @@ function Navbar() {
                 Home
               </NavLink>
             </li>
+
             <li className="nav-item">
               <div className="dropdown-top">
                 <NavLink
@@ -110,15 +111,15 @@ function Navbar() {
                 </li>
               </ul>
             </li>
+            <li className="nav-item">
+              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
+                About
+              </NavLink>
+            </li>
 
             <li className="nav-item">
               <NavLink onClick={isOpen ? toggleMenu : undefined} to="/link3" className="nav-link">
                 Contact
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
-                Link 4
               </NavLink>
             </li>
           </ul>

@@ -13,8 +13,8 @@ import Dee from "../../../../assets/dee-robinson-celebrant.jpeg";
 function TextContainer({ title }) {
   return (
     <section className="content-section about">
+      <img id="dee-pic" src={Dee} alt="dee-robinson-moongazer-celebrant" />
       <div className="text-container">
-        <img id="dee-pic" src={Dee} alt="dee-robinson-moongazer-celebrant" />
         <h2 className="section-heading">{title}</h2>
         <p className="section-content">
           Although there is no formal requirement for a celebrant to undertake accredited training,
@@ -30,10 +30,10 @@ function TextContainer({ title }) {
           This means that your ceremony can be any day of the week and it can be at any time of the
           day!
         </p>
+        <Link className="link-btn" to={"/ceremonies"}>
+          <MainBtn text={"Ceremonies"} type={"btn-dark"} />
+        </Link>
       </div>
-      <Link className="link-btn" to={"/ceremonies"}>
-        <MainBtn text={"Ceremonies"} type={"btn-dark"} />
-      </Link>
     </section>
   );
 }

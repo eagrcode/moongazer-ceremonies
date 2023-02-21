@@ -19,8 +19,10 @@ function Homepage() {
       <Planning title={"Planning"} />
       <div className="homepage-quote-container">
         <div>
-          <q>Dee make very good day for my ceremony was very nice</q>
-          <em>- Joe Bloggs</em>
+          <em>
+            <q>Dee make very good day for my ceremony was very nice</q>
+          </em>
+          <p>- Joe Bloggs</p>
         </div>
       </div>
     </>

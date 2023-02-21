@@ -6,13 +6,14 @@
 
 /* variables */
 :root {
-  --primary-bg-color: hsl(175, 40%, 95%);
-  --secondary-bg-color: hsl(233, 21%, 24%);
+  --primary-bg-color: hsl(185, 60%, 97%);
+  --secondary-bg-color: hsl(230, 30%, 25%);
   --primary-text-color: hsl(233, 21%, 10%);
   --secondary-text-color: hsl(175, 40%, 95%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
   --primary-text-container-color: hsl(200, 75%, 100%);
   --mobile-nav-height: 3.5rem;
+  --lg-nav-height: 8rem;
   --padding-mobile: 1rem;
   --padding: 3rem;
   --nav-padding-lg: 1rem 3rem;
@@ -55,7 +56,7 @@ p {
 }
 
 em {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 a {

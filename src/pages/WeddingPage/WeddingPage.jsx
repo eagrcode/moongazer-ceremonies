@@ -26,7 +26,7 @@ function WeddingPage() {
           <h2>Included in this Ceremony</h2>
           <ul className="wedding-list">
             <li className="wedding-list-item">
-              A ceremony written spicifically for you, which tells your love story
+              A ceremony written specifically for you, which tells your love story
             </li>
             <li className="wedding-list-item">
               Symbolic rituals and unique personal aspects can be included.

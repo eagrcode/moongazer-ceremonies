@@ -17,7 +17,7 @@ function NamingPage() {
           <p className="section-content">
             If you want to celebrate your new arrival with your family and friends, this is the
             perfect non-religious way to welcome a new member into your family. It might be to
-            welcome a baby into the world, a newly adopted child into your family. We will work
+            welcome a baby into the world or a newly adopted child into your family. We will work
             together to create a unique ceremony which may include readings and symbolic gestures.
             You can include godparents, guide parents or guardians who will promise to love and
             support your child during the ceremony.

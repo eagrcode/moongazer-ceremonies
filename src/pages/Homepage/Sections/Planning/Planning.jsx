@@ -7,6 +7,9 @@ import { MainBtn } from "../../../../components";
 // styles
 import "./Planning.css";
 
+// images
+import List from "../../../../assets/wedding-list.jpg";
+
 function Planning({ title }) {
   return (
     <section className="content-section planning">
@@ -22,10 +25,11 @@ function Planning({ title }) {
           extra meetings to help put your mind at ease, so you enjoy the process of creating your
           perfect day.
         </p>
+        <Link to={"/contact"}>
+          <MainBtn text={"Contact Me"} type={"btn-dark"} />
+        </Link>
       </div>
-      <Link to={"/contact"}>
-        <MainBtn text={"Contact Me"} type={"btn-dark"} />
-      </Link>
+      <img src={List} />
     </section>
   );
 }

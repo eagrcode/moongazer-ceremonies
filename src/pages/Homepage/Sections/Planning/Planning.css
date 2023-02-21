@@ -1,1 +1,16 @@
+.content-section.planning img {
+  display: none;
+}
 
+@media (min-width: 768px) {
+  .content-section.planning {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .content-section.planning img {
+    display: block;
+    width: 250px;
+    box-shadow: var(--container-shadow);
+  }
+}

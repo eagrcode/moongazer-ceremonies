@@ -22,16 +22,23 @@
   margin: auto;
   text-align: center;
   padding: 0 1rem;
-  text-shadow: 1px 1px 3px #0000008a;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.3);
 }
 
 #hero-text {
   font-size: 5rem;
-  color: var(--primary-bg-color);
+  color: white;
+  /* font-family: "Figtree", sans-serif; */
 }
 
 #tagline {
   font-family: "Courgette", cursive;
   font-size: 1.2rem;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  #hero-text {
+    font-size: 6rem;
+  }
 }

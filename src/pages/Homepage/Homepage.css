@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #b68cb8;
+  background-color: hsl(185, 50%, 80%);
 }
 
 .homepage-quote-container div {
@@ -15,12 +15,13 @@
   max-width: 50rem;
 }
 
-.homepage-quote-container q {
-  font-size: 2rem;
+.homepage-quote-container em {
+  font-size: 2.5rem;
   color: white;
+  opacity: 1;
 }
 
-.homepage-quote-container em {
+.homepage-quote-container p {
   font-size: 1.2rem;
-  color: white !important;
+  color: white;
 }

@@ -7,8 +7,11 @@ function Hero() {
   return (
     <div
       className="hero-container"
+      // style={{
+      //   backgroundImage: `linear-gradient(hsl(175, 40%, 95%, 0.1), hsl(175, 40%, 95%)), url(${Hero1})`,
+      // }}
       style={{
-        backgroundImage: `linear-gradient(hsl(175, 40%, 95%, 0.1), hsl(175, 40%, 95%)), url(${Hero1})`,
+        backgroundImage: `url(${Hero1})`,
       }}
     >
       <div className="hero-text-container">
