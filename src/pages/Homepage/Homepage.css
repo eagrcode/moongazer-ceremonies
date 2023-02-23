@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: hsl(185, 50%, 80%);
+  background-color: var(--accent-color);
 }
 
 .homepage-quote-container div {

@@ -22,12 +22,12 @@
   margin: auto;
   text-align: center;
   padding: 0 1rem;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.3);
 }
 
 #hero-text {
-  font-size: 5rem;
-  color: white;
+  font-size: 4.5rem;
+  color: var(--accent-color);
+  text-shadow: 1px 1px 3px hsla(0, 0%, 20%, 0.3);
   /* font-family: "Figtree", sans-serif; */
 }
 
