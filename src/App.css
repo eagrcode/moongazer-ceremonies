@@ -8,14 +8,14 @@
 :root {
   --primary-bg-color: hsl(185, 60%, 97%);
   --secondary-bg-color: hsl(230, 30%, 25%);
-  --accent-color: hsl(185, 50%, 80%);
+  --accent-color: hsla(190, 45%, 70%);
   --primary-text-color: hsl(233, 21%, 10%);
-  --secondary-text-color: hsl(175, 40%, 95%);
+  --secondary-text-color: hsl(0, 0%, 100%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
   --primary-text-container-color: hsl(200, 75%, 100%);
   --mobile-nav-height: 3.5rem;
   --lg-nav-height: 8rem;
-  --padding-mobile: 1rem;
+  --padding-mobile: 1.5rem;
   --padding: 3rem;
   --nav-padding-lg: 1rem 3rem;
   --container-shadow: rgba(80, 80, 80, 0.2) 0px 2px 8px 0px;
@@ -48,12 +48,11 @@ h1 {
 h2 {
   font-family: "Dancing Script", cursive;
   font-size: 2.2rem;
-
   width: max-content;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.5rem;
 }
@@ -82,9 +81,21 @@ img {
   background-color: var(--primary-bg-color);
   padding: var(--padding) var(--padding-mobile);
   display: flex;
+
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
   gap: var(--padding);
+}
+
+.content-section-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding);
+  max-width: 1200px;
 }
 
 .text-container {
@@ -106,8 +117,11 @@ img {
   box-shadow: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .content-section {
-    padding: var(--padding) var(--padding);
+    padding: var(--padding);
+  }
+  .content-section-inner {
+    flex-direction: row;
   }
 }

@@ -11,6 +11,11 @@ footer {
   gap: 1rem;
 }
 
+.nav-link.footer-logo {
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
 .footer-nav-menu {
   list-style: none;
   display: flex;
@@ -19,6 +24,7 @@ footer {
 
 .nav-link.footer {
   font-size: 1rem;
+  color: var(--primary-text-color);
 }
 
 .bottom-footer {
@@ -30,6 +36,7 @@ footer {
 
 .hitched-container {
   width: 100px;
+  height: 50px;
   display: flex;
   align-items: center;
 }

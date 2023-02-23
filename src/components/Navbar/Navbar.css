@@ -9,17 +9,18 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--accent-color);
+  opacity: 0.98;
 
   height: var(--mobile-nav-height);
   padding: var(--padding-mobile);
   border-bottom: solid 1px rgba(200, 200, 200, 0.3);
 }
 
-#logo {
+.nav-link.logo {
   font-size: 1rem;
   font-weight: 600;
   width: auto;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .nav-menu {
@@ -53,7 +54,7 @@ header {
 .nav-link {
   display: block;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
   font-size: 1.2rem;
   width: 100%;
 }
@@ -91,7 +92,7 @@ header {
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .navbar {
     padding: var(--nav-padding-lg);
   }

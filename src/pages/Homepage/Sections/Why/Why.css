@@ -1,0 +1,5 @@
+.content-section.why {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+  /* text-shadow: 1px 1px 3px rgba(80, 80, 80, 0.3); */
+}

@@ -1,5 +1,6 @@
 export { default as Homepage } from "./Homepage/Homepage";
 export { default as About } from "./Homepage/Sections/About/About";
+export { default as Why } from "./Homepage/Sections/Why/Why";
 export { default as Planning } from "./Homepage/Sections/Planning/Planning";
 export { default as CeremoniesPage } from "./CeremoniesPage/CeremoniesPage";
 export { default as Ceremonies } from "./CeremoniesPage/Sections/Ceremonies/Ceremonies";

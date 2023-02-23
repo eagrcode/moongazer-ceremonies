@@ -7,7 +7,7 @@
   width: 20px;
   height: 2px;
   margin: 5px auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--secondary-text-color);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -24,7 +24,7 @@
   transform: translateY(-7px) rotateZ(-45deg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .hamburger {
     display: none;
   }

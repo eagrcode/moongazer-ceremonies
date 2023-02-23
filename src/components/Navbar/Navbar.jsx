@@ -48,7 +48,7 @@ function Navbar() {
     <>
       <header>
         <nav className="navbar">
-          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link" id="logo">
+          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link logo">
             Moon Gazer Ceremonies
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
@@ -70,7 +70,12 @@ function Navbar() {
                 >
                   Ceremonies
                 </NavLink>
-                <BsChevronDown onClick={toggleSubMenu} size={20} id="dropdown-icon" />
+                <BsChevronDown
+                  onClick={toggleSubMenu}
+                  size={20}
+                  id="dropdown-icon"
+                  style={{ color: "white" }}
+                />
               </div>
               <ul className={`ceremony-dropdown ${isSubMenuOpen ? "active" : ""}`}>
                 <li className="nav-item">

@@ -2,10 +2,10 @@
 import "./Homepage.css";
 
 // components
-import { Hero, ImageContainer } from "../../components";
+import { Hero, ImageContainer, ImgGrid } from "../../components";
 
 // sections
-import { About, Planning } from "../../pages";
+import { About, Planning, Why } from "../../pages";
 
 // images
 import Jump from "../../assets/Jump cropped.jpg";
@@ -16,7 +16,9 @@ function Homepage() {
       <Hero />
       <About title={"About Me"} />
       <ImageContainer img={Jump} />
+      <Why title={"Why Choose A Celebrant?"} />
       <Planning title={"Planning"} />
+      <ImgGrid />
       <div className="homepage-quote-container">
         <div>
           <em>

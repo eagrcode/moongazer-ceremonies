@@ -7,12 +7,13 @@ import { AiFillInstagram } from "react-icons/ai";
 
 // images
 import AOIC from "../../assets/AOIC-logo.jpg";
+import CCL from "../../assets/CCL-logo.jpg";
 
 function Footer() {
   return (
     <footer>
       <nav className="footer-navbar">
-        <NavLink to="/" className="nav-link" id="logo">
+        <NavLink to="/" className="nav-link footer-logo">
           Moon Gazer Ceremonies
         </NavLink>
 
@@ -57,6 +58,10 @@ function Footer() {
           </div>
           <div className="aoic-container">
             <img src={AOIC} alt="AOIC-certification" />
+          </div>
+          <div className="hitched-container">
+            {/* <span>Trained by</span> */}
+            <img alt="Hitched.co.uk" src={CCL} />
           </div>
         </div>
       </nav>
