@@ -9,15 +9,13 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--accent-color);
-  opacity: 0.98;
-
   height: var(--mobile-nav-height);
   padding: var(--padding-mobile);
   border-bottom: solid 1px rgba(200, 200, 200, 0.3);
 }
 
 .nav-link.logo {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   width: auto;
   color: var(--secondary-text-color);
@@ -25,56 +23,77 @@ header {
 
 .nav-menu {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: var(--mobile-nav-height);
   left: 0;
-  display: none;
-  flex-direction: column;
   gap: 1rem;
-  min-height: calc(100vh - var(--mobile-nav-height));
-  /* max-height: calc(100vh - var(--mobile-nav-height)); */
+  height: calc(100svh - var(--mobile-nav-height));
   width: 100%;
-  list-style: none;
   padding: 50% 0;
   background-color: var(--accent-color);
+  transform: translateY(-100%);
+  z-index: -1;
+  transition: ease-out 0.3s;
 }
 
 .nav-menu.active {
   display: flex;
+  transform: translate(0);
 }
 
 .nav-item {
   text-align: center;
   width: 100%;
+  opacity: 0;
+  transition: 0.1s -1s;
+}
+
+.nav-item.active {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+.nav-item.sub {
+  opacity: 1;
 }
 
 .nav-link {
   display: block;
   text-decoration: none;
   color: var(--secondary-text-color);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 100%;
 }
 
 .dropdown-top {
-  width: 100%;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  margin-left: 30px;
 }
 
 #ceremonies-link {
-  margin-left: 30px;
   width: auto;
 }
 
+#dropdown-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #dropdown-icon {
-  margin-left: 10px;
   cursor: pointer;
 }
 
 .ceremony-dropdown {
   display: none;
+
   margin-top: 1rem;
   gap: 1rem;
   flex-direction: column;
