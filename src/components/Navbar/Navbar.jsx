@@ -47,24 +47,29 @@ function Navbar() {
   return (
     <>
       <header>
-        <nav onMouseLeave={toggleSubMenu} className="navbar">
-          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link logo">
+        <nav onMouseLeave={() => setIsSubMenuOpen(false)} className="navbar">
+          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="logo">
             Moon Gazer Ceremonies
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-            <li className={`nav-item ${isOpen ? "active" : ""}`}>
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link">
+            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+              <NavLink
+                onMouseEnter={() => setIsSubMenuOpen(false)}
+                onClick={isOpen ? toggleMenu : undefined}
+                to="/"
+                className="nav-link"
+              >
                 Home
               </NavLink>
             </li>
 
-            <li className={`nav-item ${isOpen ? "active" : ""}`}>
+            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
               <div className="dropdown-top">
                 <NavLink
                   onClick={isOpen ? toggleMenu : undefined}
-                  onMouseEnter={toggleSubMenu}
+                  onMouseEnter={() => setIsSubMenuOpen(true)}
                   to="/ceremonies"
                   className="nav-link"
                   id="ceremonies-link"
@@ -120,14 +125,24 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li className={`nav-item ${isOpen ? "active" : ""}`}>
-              <a onClick={isOpen ? toggleMenu : undefined} href="/#to-about" className="nav-link">
+            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+              <a
+                onClick={isOpen ? toggleMenu : undefined}
+                onMouseEnter={() => setIsSubMenuOpen(false)}
+                href="/#to-about"
+                className="nav-link"
+              >
                 About
               </a>
             </li>
 
-            <li className={`nav-item ${isOpen ? "active" : ""}`}>
-              <NavLink onClick={isOpen ? toggleMenu : undefined} to="#" className="nav-link">
+            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+              <NavLink
+                onClick={isOpen ? toggleMenu : undefined}
+                onMouseEnter={() => setIsSubMenuOpen(false)}
+                to="#"
+                className="nav-link"
+              >
                 Contact
               </NavLink>
             </li>
