@@ -18,22 +18,22 @@ function Footer() {
         </NavLink>
 
         <ul className="footer-nav-menu">
-          <li className="nav-item">
+          <li className="nav-item footer">
             <NavLink to="/" className="nav-link footer">
               Home
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item footer">
             <NavLink to="/ceremonies" className="nav-link footer">
               Ceremonies
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item footer">
             <NavLink to="/link3" className="nav-link footer">
               Contact
             </NavLink>
           </li>
-          <li className="nav-item">
+          <li className="nav-item footer">
             <NavLink to="#" className="nav-link footer">
               Link 4
             </NavLink>
