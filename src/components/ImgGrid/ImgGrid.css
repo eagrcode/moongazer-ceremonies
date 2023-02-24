@@ -15,3 +15,9 @@
   height: 100%;
   filter: grayscale(100%);
 }
+
+@media (min-width: 900px) {
+  .img-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -17,8 +17,9 @@ function Homepage() {
       <About title={"About Me"} />
       <ImageContainer img={Jump} />
       <Why title={"Why Choose A Celebrant?"} />
-      <Planning title={"Planning"} />
       <ImgGrid />
+      <Planning title={"Planning"} />
+
       <div className="homepage-quote-container">
         <div>
           <em>
