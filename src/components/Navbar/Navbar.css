@@ -38,10 +38,6 @@ header {
   background-color: var(--accent-color);
 }
 
-.nav-menu a {
-  opacity: 0.9;
-}
-
 .nav-menu.active {
   display: flex;
 }
@@ -95,6 +91,9 @@ header {
 @media (min-width: 900px) {
   .navbar {
     padding: var(--nav-padding-lg);
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
   }
 
   .nav-menu {
@@ -108,8 +107,8 @@ header {
     overflow: visible;
   }
 
-  #logo {
-    font-size: 1.4rem;
+  .nav-link.logo {
+    font-size: 2rem;
   }
 
   .nav-item {

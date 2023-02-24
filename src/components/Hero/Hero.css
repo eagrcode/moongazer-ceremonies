@@ -37,7 +37,7 @@
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   #hero-text {
     font-size: 6rem;
   }
