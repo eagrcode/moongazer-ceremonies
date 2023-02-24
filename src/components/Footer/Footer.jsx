@@ -40,7 +40,7 @@ function Footer() {
           </li>
         </ul>
         <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
-          <AiFillInstagram size={30} />
+          <AiFillInstagram size={30} style={{ color: "var(--accent-color)" }} />
         </a>
         <div className="bottom-footer">
           <div className="hitched-container">

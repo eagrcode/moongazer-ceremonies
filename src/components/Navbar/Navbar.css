@@ -68,7 +68,6 @@ header {
 
 .dropdown-top {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -113,17 +112,20 @@ header {
     flex-direction: column;
     gap: 1rem;
     height: auto;
+    position: relative;
+    justify-content: center;
   }
 
   .nav-menu {
-    position: relative;
     display: flex;
-    min-height: 100%;
+    position: relative;
+    height: auto;
     width: fit-content;
-    top: 0;
     flex-direction: row;
     padding: 0;
-    overflow: visible;
+    z-index: inherit;
+    top: 0;
+    transform: translate(0);
   }
 
   .nav-link.logo {
@@ -137,6 +139,11 @@ header {
     position: relative;
     padding: 5px;
     border-radius: 2px;
+    opacity: 1;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
   }
 
   /* #dropdown-icon {
@@ -145,7 +152,6 @@ header {
 
   .nav-link:hover {
     color: black;
-    opacity: 1;
   }
 
   #ceremonies-link {
@@ -153,26 +159,37 @@ header {
   }
 
   #dropdown-icon {
-    margin: 0;
+    /* margin: 0; */
+    display: none;
   }
 
   .dropdown-top {
-    gap: 5px;
+    gap: 0;
+    margin: 0;
+    position: relative;
   }
 
   .ceremony-dropdown {
     position: absolute;
     background-color: var(--primary-bg-color);
 
-    margin: calc(var(--mobile-nav-height) - var(--padding-mobile)) var(--padding-mobile) 0 100%;
+    margin: 0;
+    top: 0;
+    margin-top: 49px;
+    /* margin-top: 100%;  */
+    /* margin: calc(var(--lg-nav-height) - var(--padding-mobile)) var(--padding-mobile) 0 100%; */
     /* margin-left: 100%;
     margin-right: var(--padding-mobile);
 
     margin-top: calc(var(--mobile-nav-height) - var(--padding-mobile)); */
-    width: calc(200% + var(--padding-mobile));
-    text-align: left;
-    align-items: flex-start;
-    padding: var(--padding-mobile);
+    /* width: calc(200% + var(--padding-mobile)); */
+    /* text-align: left;
+    align-items: flex-start; */
+    padding: 1rem;
     box-shadow: var(--container-shadow);
+  }
+
+  .ceremony-dropdown .nav-link {
+    color: var(--primary-text-color);
   }
 }

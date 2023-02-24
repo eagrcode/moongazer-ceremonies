@@ -47,7 +47,7 @@ function Navbar() {
   return (
     <>
       <header>
-        <nav className="navbar">
+        <nav onMouseLeave={toggleSubMenu} className="navbar">
           <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="nav-link logo">
             Moon Gazer Ceremonies
           </NavLink>
@@ -64,6 +64,7 @@ function Navbar() {
               <div className="dropdown-top">
                 <NavLink
                   onClick={isOpen ? toggleMenu : undefined}
+                  onMouseEnter={toggleSubMenu}
                   to="/ceremonies"
                   className="nav-link"
                   id="ceremonies-link"
