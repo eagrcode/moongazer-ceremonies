@@ -60,7 +60,7 @@ function Footer() {
             <img src={AOIC} alt="AOIC-certification" />
           </div>
           <div className="hitched-container">
-            {/* <span>Trained by</span> */}
+            <span>Trained by</span>
             <img alt="Hitched.co.uk" src={CCL} />
           </div>
         </div>

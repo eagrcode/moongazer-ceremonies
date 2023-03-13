@@ -2,10 +2,7 @@
 import "./WeddingPage.css";
 
 // components
-import { ImageContainer, MainBtn } from "../../components";
-
-// images
-import Wedding from "../../assets/wedding-card.jpg";
+import { MainBtn } from "../../components";
 
 function WeddingPage() {
   return (

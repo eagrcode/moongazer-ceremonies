@@ -1,10 +1,6 @@
 // CSS
 import "./Hero.css";
 
-import Hero1 from "../../assets/cake-table.jpg";
-import Hero2 from "../../assets/cake-table-bw.jpg";
-import Hero3 from "../../assets/white-rose.jpg";
-
 function Hero() {
   return (
     <div

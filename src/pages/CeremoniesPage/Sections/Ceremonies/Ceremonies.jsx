@@ -1,8 +1,8 @@
 import { CeremonyCard } from "../../../../components";
 
 // images
-import Wedding from "../../../../assets/table.jpg";
-import Renewal from "../../../../assets/old-couple.jpg";
+import Wedding from "../../../../assets/wedding.jpg";
+import Renewal from "../../../../assets/renewal.jpg";
 import Commitment from "../../../../assets/commitment-ceremony.jpg";
 import Naming from "../../../../assets/naming-ceremony.jpg";
 
