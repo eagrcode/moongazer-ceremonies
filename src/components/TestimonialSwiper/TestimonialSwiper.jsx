@@ -1,11 +1,11 @@
 // data
-import testamonials from "../../testamonials";
+import testimonials from "../../testimonials";
 
 // react
 import { useState } from "react";
 
 // styles
-import "./TestamonialSwiper.css";
+import "./TestimonialSwiper.css";
 
 // swiper styles
 import "swiper/css";
@@ -16,9 +16,9 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 
-function TestamonialSwiper() {
+function TestimonialSwiper() {
   // state
-  const [testamonialsData, setTestamonialsData] = useState(testamonials);
+  const [testimonialsData, setTestimonialsData] = useState(testimonials);
 
   return (
     <Swiper
@@ -27,7 +27,7 @@ function TestamonialSwiper() {
       loop={true}
       autoplay={{ delay: 5000, disableOnInteraction: false }}
     >
-      {testamonialsData.map((item) => (
+      {testimonialsData.map((item) => (
         <SwiperSlide key={item.id}>
           <div className="homepage-quote-container">
             <div>
@@ -43,4 +43,4 @@ function TestamonialSwiper() {
   );
 }
 
-export default TestamonialSwiper;
+export default TestimonialSwiper;

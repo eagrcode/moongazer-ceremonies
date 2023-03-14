@@ -7,4 +7,4 @@ export { default as CeremonyCard } from "./CeremonyCard/CeremonyCard";
 export { default as ScrollToTop } from "./ScrollToTop";
 export { default as Footer } from "./Footer/Footer";
 export { default as ImgGrid } from "./ImgGrid/ImgGrid";
-export { default as TestamonialSwiper } from "./TestamonialSwiper/TestamonialSwiper";
+export { default as TestimonialSwiper } from "./TestimonialSwiper/TestimonialSwiper";

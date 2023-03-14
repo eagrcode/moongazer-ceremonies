@@ -1,4 +1,4 @@
-const testamonials = [
+const testimonials = [
   {
     id: 0,
     text: `Dee shows empathy and sensitivity in all she does, and her life experience helps to guide people through both happy and sad times. I can’t imagine anyone better suited to the role of a celebrant, and would thoroughly recommend her services.`,
@@ -11,4 +11,4 @@ const testamonials = [
   },
 ];
 
-export default testamonials;
+export default testimonials;

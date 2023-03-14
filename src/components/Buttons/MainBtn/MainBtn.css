@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.main-btn.contact {
+  margin-top: 0;
+}
+
 .main-btn.btn-dark {
   color: var(--secondary-text-color);
 

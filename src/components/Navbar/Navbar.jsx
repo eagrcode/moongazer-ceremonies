@@ -142,7 +142,7 @@ function Navbar() {
               <NavLink
                 onClick={isOpen ? toggleMenu : undefined}
                 onMouseEnter={() => setIsSubMenuOpen(false)}
-                to="#"
+                to="contact"
                 className="nav-link"
               >
                 Contact

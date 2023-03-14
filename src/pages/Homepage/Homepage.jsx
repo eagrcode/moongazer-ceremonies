@@ -2,7 +2,7 @@
 import "./Homepage.css";
 
 // components
-import { Hero, ImageContainer, ImgGrid, TestamonialSwiper } from "../../components";
+import { Hero, ImageContainer, ImgGrid, TestimonialSwiper } from "../../components";
 
 // sections
 import { About, Planning, Why } from "../../pages";
@@ -19,7 +19,7 @@ function Homepage() {
       <Why title={"Why Choose A Celebrant?"} />
       <ImgGrid />
       <Planning title={"Planning"} />
-      <TestamonialSwiper />
+      <TestimonialSwiper />
     </>
   );
 }
