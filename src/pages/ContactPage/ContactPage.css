@@ -49,8 +49,15 @@ textarea {
   overflow: auto;
 }
 
-form button {
-  margin-top: 5rem;
+.submit-btn {
+  padding: 8px;
+  background-color: transparent;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  border: transparent;
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-bg-color);
 }
 
 @media (min-width: 900px) {
