@@ -18,10 +18,7 @@ function ContactPage() {
         </p>
         <div className="contact-details-container">
           <div className="cdc-row">
-            <FaPhone size={20} /> 07123456789
-          </div>
-          <div className="cdc-row">
-            <MdEmail size={20} /> yeah.nah@yeahnahyeah.nah
+            <MdEmail size={20} /> moongazerceremonies@gmail.com
           </div>
         </div>
       </div>

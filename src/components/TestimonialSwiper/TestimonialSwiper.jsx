@@ -25,7 +25,7 @@ function TestimonialSwiper() {
       modules={[Autoplay, Pagination]}
       slidesPerView={1}
       loop={true}
-      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      autoplay={{ delay: 12000, disableOnInteraction: false }}
     >
       {testimonialsData.map((item) => (
         <SwiperSlide key={item.id}>

@@ -9,6 +9,11 @@ const testimonials = [
     text: `Personally, I couldn’t think of a more lovely person to act as a celebrant at a wedding, nor a more empathetic, sensitive or caring person to conduct a funeral. She truly guides those around her through life with wisdom and love.`,
     author: `S. Macdonald`,
   },
+  {
+    id: 2,
+    text: `Amazing service. You really helped me before, during and after our special day. Can’t recommend highly enough.`,
+    author: `V. Fraser`,
+  },
 ];
 
 export default testimonials;

@@ -13,7 +13,7 @@ function Hero() {
       // }}
     >
       <div className="hero-text-container">
-        <h1 id="hero-text">Moon Gazer Ceremonies</h1>
+        <h1 id="hero-text">MoonGazer Ceremonies</h1>
       </div>
     </div>
   );
