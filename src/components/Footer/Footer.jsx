@@ -33,11 +33,6 @@ function Footer() {
               Contact
             </NavLink>
           </li>
-          <li className="nav-item footer">
-            <NavLink to="#" className="nav-link footer">
-              Link 4
-            </NavLink>
-          </li>
         </ul>
         <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
           <AiFillInstagram size={30} style={{ color: "var(--accent-color)" }} />

@@ -2,7 +2,7 @@
 import "./Homepage.css";
 
 // components
-import { Hero, ImageContainer, ImgGrid } from "../../components";
+import { Hero, ImageContainer, ImgGrid, TestamonialSwiper } from "../../components";
 
 // sections
 import { About, Planning, Why } from "../../pages";
@@ -19,15 +19,7 @@ function Homepage() {
       <Why title={"Why Choose A Celebrant?"} />
       <ImgGrid />
       <Planning title={"Planning"} />
-
-      <div className="homepage-quote-container">
-        <div>
-          <em>
-            <q>Dee make very good day for my ceremony was very nice</q>
-          </em>
-          <p>- Joe Bloggs</p>
-        </div>
-      </div>
+      <TestamonialSwiper />
     </>
   );
 }

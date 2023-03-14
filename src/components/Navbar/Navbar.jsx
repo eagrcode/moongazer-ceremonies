@@ -24,7 +24,9 @@ function Navbar() {
 
   // Toggle open sub nav menu
   function toggleSubMenu() {
-    setIsSubMenuOpen(!isSubMenuOpen);
+    if (window.innerWidth >= 900) {
+      setIsSubMenuOpen(!isSubMenuOpen);
+    }
   }
 
   // Set Nav bg color on scroll
@@ -49,7 +51,7 @@ function Navbar() {
       <header>
         <nav onMouseLeave={() => setIsSubMenuOpen(false)} className="navbar">
           <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="logo">
-            Moon Gazer Ceremonies
+            MoonGazer Ceremonies
           </NavLink>
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
@@ -125,7 +127,7 @@ function Navbar() {
                 </li>
               </ul>
             </li>
-            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+            {/* <li className={`nav-item ${isOpen ? "active" : "main"}`}>
               <a
                 onClick={isOpen ? toggleMenu : undefined}
                 onMouseEnter={() => setIsSubMenuOpen(false)}
@@ -134,7 +136,7 @@ function Navbar() {
               >
                 About
               </a>
-            </li>
+            </li> */}
 
             <li className={`nav-item ${isOpen ? "active" : "main"}`}>
               <NavLink
