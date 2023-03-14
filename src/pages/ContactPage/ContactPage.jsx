@@ -9,7 +9,10 @@ import { useState } from "react";
 
 function ContactPage() {
   // state
-  const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", message: "" });
+  const [formData, setFormData] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const encode = (data) => {
     return Object.keys(data)
@@ -17,13 +20,17 @@ function ContactPage() {
       .join("&");
   };
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
-
   const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contactForm", formData }),
+      body: encode({
+        "form-name": "contact",
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        message: message,
+      }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -47,8 +54,8 @@ function ContactPage() {
       <form name="contact" onSubmit={handleSubmit}>
         {/* <input type="hidden" name="form-name" value="contact" /> */}
         <input
-          onChange={handleChange}
-          value={formData.firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+          value={firstName}
           type="text"
           name="first-Name"
           placeholder="First Name"
@@ -56,8 +63,8 @@ function ContactPage() {
           minLength="2"
         />
         <input
-          onChange={handleChange}
-          value={formData.lastName}
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
           type="text"
           name="last-Name"
           placeholder="Last Name"
@@ -65,8 +72,8 @@ function ContactPage() {
           minLength="2"
         />
         <input
-          onChange={handleChange}
-          value={formData.email}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           name="email"
           placeholder="Email Adress"
@@ -74,8 +81,8 @@ function ContactPage() {
           required
         />
         <textarea
-          onChange={handleChange}
-          value={formData.message}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
           name="message"
           placeholder="Message"
           minLength="10"
