@@ -9,3 +9,4 @@ export { default as MarriageRenewalPage } from "./MarriageRenewalPage/MarriageRe
 export { default as UnityPage } from "./UnityPage/UnityPage";
 export { default as NamingPage } from "./NamingPage/NamingPage";
 export { default as ContactPage } from "./ContactPage/ContactPage";
+export { default as SuccessPage } from "./SuccessPage/SuccessPage";

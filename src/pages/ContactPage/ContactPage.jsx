@@ -21,7 +21,7 @@ function ContactPage() {
         </div>
       </div>
 
-      <form name="contact" method="POST" data-netlify="true" action="/">
+      <form name="contact" method="POST" data-netlify="true" action="/pages/Success/SuccessPage">
         <input type="hidden" name="form-name" value="contact" />
         <input type="text" name="first-Name" placeholder="First Name" required minLength="2" />
         <input type="text" name="last-Name" placeholder="Last Name" required minLength="2" />
