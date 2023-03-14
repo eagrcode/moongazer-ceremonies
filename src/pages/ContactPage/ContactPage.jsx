@@ -4,15 +4,13 @@ import "./ContactPage.css";
 // components
 import { MainBtn } from "../../components";
 
-import { FaPhone } from "react-icons/fa";
-
 import { MdEmail } from "react-icons/md";
 
 function ContactPage() {
   return (
     <section className="content-section contact">
       <h1>Contact Me</h1>
-      <div className="text-container">
+      <div className="text-container contact">
         <p>
           You can either contact me directly, or fill out the form below and I will get back to you.
         </p>

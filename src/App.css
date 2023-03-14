@@ -16,7 +16,7 @@
   --mobile-nav-height: 3.5rem;
   --lg-nav-height: 8rem;
   --padding-mobile: 1.5rem;
-  --padding: 3rem;
+  --padding: 5rem;
   --nav-padding-lg: 1rem 3rem;
   --container-shadow: rgba(80, 80, 80, 0.2) 0px 2px 8px 0px;
   --container-radius: 2px;
@@ -31,8 +31,6 @@
 html {
   font-size: 100%;
   letter-spacing: 0.5px;
-  scroll-behavior: smooth;
-  scroll-padding-top: var(--mobile-nav-height);
 }
 
 body {

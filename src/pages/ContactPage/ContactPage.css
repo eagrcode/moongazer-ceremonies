@@ -2,6 +2,10 @@
   min-height: calc(100svh - var(--mobile-nav-height));
 }
 
+.text-container.contact {
+  text-align: center;
+}
+
 .contact-details-container {
   display: flex;
   flex-direction: column;
@@ -39,7 +43,7 @@ textarea {
 }
 
 textarea {
-  height: 15rem;
+  height: 10rem;
   overflow-wrap: break-word;
   resize: none;
   overflow: auto;
@@ -47,4 +51,10 @@ textarea {
 
 form button {
   margin-top: 5rem;
+}
+
+@media (min-width: 900px) {
+  .content-section.contact {
+    min-height: calc(100vh - var(--mobile-nav-height));
+  }
 }

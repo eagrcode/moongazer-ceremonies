@@ -40,8 +40,8 @@ function NamingPage() {
             </li>
             <li className="wedding-list-item">Packages from £350</li>
           </ul>
+          <MainBtn text={"Contact Me"} type={"btn-light"} />
         </div>
-        <MainBtn text={"Contact Me"} type={"btn-light"} />
       </section>
     </>
   );

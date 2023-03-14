@@ -47,8 +47,8 @@ function UnityPage() {
             </li>
             <li className="wedding-list-item">Packages from £650</li>
           </ul>
+          <MainBtn text={"Contact Me"} type={"btn-light"} />
         </div>
-        <MainBtn text={"Contact Me"} type={"btn-light"} />
       </section>
     </>
   );
