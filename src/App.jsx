@@ -10,6 +10,7 @@ import {
   WeddingPage,
   NamingPage,
   ContactPage,
+  SuccessPage,
 } from "./pages";
 
 // components
@@ -32,6 +33,7 @@ function App() {
           <Route path="unity" element={<UnityPage />} />
           <Route path="naming" element={<NamingPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="success" element={<SuccessPage />} />
         </Route>
       </Routes>
       <Footer />
