@@ -6,13 +6,16 @@ import { MdEmail } from "react-icons/md";
 
 // react
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ContactPage() {
   // state
-  const [formData, setFormData] = useState("");
   const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const navigate = useNavigate();
 
   const encode = (data) => {
     return Object.keys(data)
@@ -21,6 +24,7 @@ function ContactPage() {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -31,10 +35,12 @@ function ContactPage() {
         email: email,
         message: message,
       }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-    e.preventDefault();
+    }).catch((error) => alert(error));
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
+    navigate("/success");
   };
 
   return (
