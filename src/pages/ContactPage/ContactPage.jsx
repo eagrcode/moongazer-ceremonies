@@ -30,8 +30,8 @@ function ContactPage() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact",
-        first_name: firstName,
-        last_name: lastName,
+        fName: firstName,
+        lName: lastName,
         email: email,
         message: message,
       }),
@@ -46,16 +46,6 @@ function ContactPage() {
   return (
     <section className="content-section contact">
       <h1>Contact Me</h1>
-      <div className="text-container contact">
-        <p>
-          You can either contact me directly, or fill out the form below and I will get back to you.
-        </p>
-        <div className="contact-details-container">
-          <div className="cdc-row">
-            <MdEmail size={20} /> moongazerceremonies@gmail.com
-          </div>
-        </div>
-      </div>
 
       <form name="contact" onSubmit={handleSubmit}>
         {/* <input type="hidden" name="form-name" value="contact" /> */}
@@ -63,7 +53,7 @@ function ContactPage() {
           onChange={(e) => setFirstName(e.target.value)}
           value={firstName}
           type="text"
-          name="first_name"
+          name="fName"
           placeholder="First Name"
           required
           minLength="2"
@@ -72,7 +62,7 @@ function ContactPage() {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           type="text"
-          name="last_name"
+          name="lName"
           placeholder="Last Name"
           required
           minLength="2"
@@ -99,6 +89,16 @@ function ContactPage() {
           Submit
         </button>
       </form>
+      <div className="text-container contact">
+        <p>
+          You can either contact me directly, or fill out the form below and I will get back to you.
+        </p>
+        <div className="contact-details-container">
+          <div className="cdc-row">
+            <MdEmail size={20} /> moongazerceremonies@gmail.com
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
