@@ -29,9 +29,9 @@ function ContactPage() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact",
-        fName: firstName,
-        lName: lastName,
+        "form-name": "submissions",
+        first_name: firstName,
+        last_name: lastName,
         email: email,
         message: message,
       }),
@@ -47,13 +47,12 @@ function ContactPage() {
     <section className="content-section contact">
       <h1>Contact Me</h1>
 
-      <form name="contact" onSubmit={handleSubmit}>
-        {/* <input type="hidden" name="form-name" value="contact" /> */}
+      <form name="submissions" onSubmit={handleSubmit}>
         <input
           onChange={(e) => setFirstName(e.target.value)}
           value={firstName}
           type="text"
-          name="fName"
+          name="first_name"
           placeholder="First Name"
           required
           minLength="2"
@@ -62,7 +61,7 @@ function ContactPage() {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           type="text"
-          name="lName"
+          name="last_name"
           placeholder="Last Name"
           required
           minLength="2"
