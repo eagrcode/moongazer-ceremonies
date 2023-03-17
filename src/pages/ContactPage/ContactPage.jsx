@@ -29,7 +29,7 @@ function ContactPage() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "messages",
+        "form-name": "contact",
         first_name: firstName,
         last_name: lastName,
         email: email,
@@ -48,6 +48,7 @@ function ContactPage() {
       <h1>Contact Me</h1>
 
       <form onSubmit={handleSubmit}>
+        <input type="hidden" name="form-name" value="contact" />
         <input
           onChange={(e) => setFirstName(e.target.value)}
           value={firstName}
