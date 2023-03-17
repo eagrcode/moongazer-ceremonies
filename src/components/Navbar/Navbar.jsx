@@ -2,8 +2,9 @@
 import { useState } from "react";
 
 // libraries
-import { Outlet, NavLink, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
 // components
 import { Hamburger } from "../index";
@@ -54,7 +55,7 @@ function Navbar() {
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+            <li className={`nav-item ${isOpen ? "active" : ""}`}>
               <NavLink
                 onMouseEnter={() => setIsSubMenuOpen(false)}
                 onClick={isOpen ? toggleMenu : undefined}
@@ -65,7 +66,7 @@ function Navbar() {
               </NavLink>
             </li>
 
-            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+            <li className={`nav-item ${isOpen ? "active" : ""}`}>
               <div className="dropdown-top">
                 <NavLink
                   onClick={isOpen ? toggleMenu : undefined}
@@ -135,7 +136,7 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
+            <li className={`nav-item ${isOpen ? "active" : ""}`}>
               <NavLink
                 onClick={isOpen ? toggleMenu : undefined}
                 onMouseEnter={() => setIsSubMenuOpen(false)}
@@ -145,6 +146,26 @@ function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <ul className="social-links-menu">
+              <li className={`nav-item ${isOpen ? "active" : ""}`}>
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://www.instagram.com/moongazerceremonies/"
+                >
+                  <AiFillInstagram size={30} style={{ color: "var(--secondary-text-color)" }} />
+                </a>
+              </li>
+              <li className={`nav-item ${isOpen ? "active" : ""}`}>
+                <a
+                  rel="nofollow"
+                  target="_blank"
+                  href="https://www.facebook.com/moongazerceremonies"
+                >
+                  <AiFillFacebook size={30} style={{ color: "var(--secondary-text-color)" }} />
+                </a>
+              </li>
+            </ul>
           </ul>
         </nav>
       </header>

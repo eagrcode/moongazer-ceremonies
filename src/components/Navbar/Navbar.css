@@ -27,6 +27,7 @@ header {
   display: flex;
   flex-direction: column;
   top: var(--mobile-nav-height);
+  align-items: center;
   left: 0;
   gap: 1rem;
   height: calc(100svh - var(--mobile-nav-height));
@@ -105,6 +106,13 @@ header {
 
 .dropdown {
   font-size: 1rem;
+}
+
+.social-links-menu {
+  display: flex;
+  list-style: none;
+
+  gap: 1rem;
 }
 
 @media (min-width: 900px) {

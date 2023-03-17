@@ -35,7 +35,7 @@ function FuneralPage() {
           <h2>Included in this Ceremony</h2>
           <ul className="wedding-list">
             <li className="wedding-list-item">
-              Interview meeting usually at clients home or If preferred at the funeral directors,
+              Interview meeting usually at clients home or if preferred at the funeral directors,
               whichever is more convenient to you and follow up interviews or telephone calls as
               required.
             </li>
