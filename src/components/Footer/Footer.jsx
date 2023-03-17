@@ -3,7 +3,7 @@ import "./Footer.css";
 
 // libraries
 import { NavLink } from "react-router-dom";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 
 // images
 import AOIC from "../../assets/AOIC-logo.jpg";
@@ -36,6 +36,9 @@ function Footer() {
         </ul>
         <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
           <AiFillInstagram size={30} style={{ color: "var(--accent-color)" }} />
+        </a>
+        <a rel="nofollow" target="_blank" href="https://www.facebook.com/moongazerceremonies">
+          <AiFillFacebook size={30} style={{ color: "var(--accent-color)" }} />
         </a>
         <div className="bottom-footer">
           <div className="hitched-container">

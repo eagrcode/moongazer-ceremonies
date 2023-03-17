@@ -1,7 +1,7 @@
 .ceremonies-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: var(--padding);
+  grid-gap: 3rem;
   max-width: 50rem;
 }
 
@@ -9,7 +9,7 @@
   max-height: 250px;
 } */
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .ceremonies-grid {
     grid-template-columns: 1fr 1fr;
   }

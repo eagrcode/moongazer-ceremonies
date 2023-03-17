@@ -17,6 +17,7 @@ function Ceremonies() {
         <CeremonyCard title={"Vow Renewal"} img={Renewal} path={"/renewal"} />
         <CeremonyCard title={"Commitment"} img={Commitment} path={"/unity"} />
         <CeremonyCard title={"Naming"} img={Naming} path={"/naming"} />
+        <CeremonyCard title={"Funeral"} img={Naming} path={"/funeral"} />
       </div>
     </section>
   );
