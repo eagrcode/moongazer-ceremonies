@@ -29,7 +29,7 @@ function ContactPage() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": "contact",
+        "form-name": "messages",
         first_name: firstName,
         last_name: lastName,
         email: email,
