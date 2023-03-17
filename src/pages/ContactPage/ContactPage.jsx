@@ -82,8 +82,8 @@ function ContactPage() {
           onChange={(e) => setEmail(e.target.value)}
           type="email"
           name="email"
-          placeholder="Email Adress"
-          minLength="5"
+          placeholder="Email Address"
+          minLength="6"
           required
         />
         <textarea
