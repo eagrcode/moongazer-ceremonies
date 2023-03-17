@@ -24,9 +24,7 @@ function Navbar() {
 
   // Toggle open sub nav menu
   function toggleSubMenu() {
-    if (window.innerWidth >= 900) {
-      setIsSubMenuOpen(!isSubMenuOpen);
-    }
+    setIsSubMenuOpen(!isSubMenuOpen);
   }
 
   // Set Nav bg color on scroll
@@ -125,18 +123,17 @@ function Navbar() {
                     Naming
                   </NavLink>
                 </li>
+                <li className="nav-item sub">
+                  <NavLink
+                    onClick={isOpen ? toggleMenu : undefined}
+                    to="/funeral"
+                    className="nav-link dropdown"
+                  >
+                    Funeral
+                  </NavLink>
+                </li>
               </ul>
             </li>
-            {/* <li className={`nav-item ${isOpen ? "active" : "main"}`}>
-              <a
-                onClick={isOpen ? toggleMenu : undefined}
-                onMouseEnter={() => setIsSubMenuOpen(false)}
-                href="/#to-about"
-                className="nav-link"
-              >
-                About
-              </a>
-            </li> */}
 
             <li className={`nav-item ${isOpen ? "active" : "main"}`}>
               <NavLink

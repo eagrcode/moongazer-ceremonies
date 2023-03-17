@@ -9,6 +9,7 @@ import {
   UnityPage,
   WeddingPage,
   NamingPage,
+  FuneralPage,
   ContactPage,
   SuccessPage,
 } from "./pages";
@@ -35,6 +36,7 @@ function App() {
           <Route path="renewal" element={<MarriageRenewalPage />} />
           <Route path="unity" element={<UnityPage />} />
           <Route path="naming" element={<NamingPage />} />
+          <Route path="funeral" element={<FuneralPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="success" element={<SuccessPage />} />
         </Route>
