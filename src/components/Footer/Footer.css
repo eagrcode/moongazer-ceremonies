@@ -7,7 +7,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--padding);
+  padding: var(--padding-mobile);
   gap: 1rem;
 }
 

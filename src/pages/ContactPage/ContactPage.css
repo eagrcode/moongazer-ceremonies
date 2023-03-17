@@ -1,7 +1,3 @@
-.content-section.contact {
-  min-height: calc(100svh - var(--mobile-nav-height));
-}
-
 .text-container.contact {
   text-align: center;
 }
@@ -58,10 +54,4 @@ textarea {
   cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
-}
-
-@media (min-width: 900px) {
-  .content-section.contact {
-    min-height: calc(100vh - var(--mobile-nav-height));
-  }
 }

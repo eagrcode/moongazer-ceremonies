@@ -14,7 +14,10 @@ import {
 } from "./pages";
 
 // components
-import { Navbar, ScrollToTop, Footer } from "./components";
+import { Navbar, Footer } from "./components";
+
+// utils
+import ScrollToTop from "./utils/ScrollToTop";
 
 // styles
 import "./App.css";

@@ -14,7 +14,7 @@ function Footer() {
     <footer>
       <nav className="footer-navbar">
         <NavLink to="/" className="nav-link footer-logo">
-          Moon Gazer Ceremonies
+          MoonGazer Ceremonies
         </NavLink>
 
         <ul className="footer-nav-menu">
@@ -29,7 +29,7 @@ function Footer() {
             </NavLink>
           </li>
           <li className="nav-item footer">
-            <NavLink to="/link3" className="nav-link footer">
+            <NavLink to="/contact" className="nav-link footer">
               Contact
             </NavLink>
           </li>

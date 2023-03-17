@@ -47,6 +47,17 @@ function ContactPage() {
     <section className="content-section contact">
       <h1>Contact Me</h1>
 
+      <div className="text-container contact">
+        <p>
+          You can either contact me directly, or fill out the form below and I will get back to you.
+        </p>
+        <div className="contact-details-container">
+          <div className="cdc-row">
+            <MdEmail size={20} /> moongazerceremonies@gmail.com
+          </div>
+        </div>
+      </div>
+
       <form onSubmit={handleSubmit}>
         <input type="hidden" name="form-name" value="contact" />
         <input
@@ -89,16 +100,6 @@ function ContactPage() {
           Submit
         </button>
       </form>
-      <div className="text-container contact">
-        <p>
-          You can either contact me directly, or fill out the form below and I will get back to you.
-        </p>
-        <div className="contact-details-container">
-          <div className="cdc-row">
-            <MdEmail size={20} /> moongazerceremonies@gmail.com
-          </div>
-        </div>
-      </div>
     </section>
   );
 }
