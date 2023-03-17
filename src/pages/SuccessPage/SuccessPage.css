@@ -1,0 +1,13 @@
+.content-section.success {
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  height: calc(100vh - 120px);
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

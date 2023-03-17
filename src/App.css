@@ -6,9 +6,9 @@
 
 /* variables */
 :root {
-  --primary-bg-color: hsl(185, 60%, 97%);
-  --secondary-bg-color: hsl(230, 30%, 25%);
-  --accent-color: hsl(189, 50%, 65%);
+  --primary-bg-color: #f3fbfc;
+  --secondary-bg-color: #2d3353;
+  --accent-color: #79c5d2;
   --primary-text-color: hsl(233, 21%, 10%);
   --secondary-text-color: hsl(0, 0%, 100%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
@@ -46,8 +46,9 @@ h1 {
 
 h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   width: max-content;
+  word-break: break-all;
 }
 
 p {
@@ -123,6 +124,10 @@ img {
 }
 
 @media (min-width: 900px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
   p {
     font-size: 1.2rem;
   }

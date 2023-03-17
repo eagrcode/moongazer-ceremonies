@@ -30,8 +30,8 @@ function ContactPage() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": "contact",
-        firstName: firstName,
-        lastName: lastName,
+        first_name: firstName,
+        last_name: lastName,
         email: email,
         message: message,
       }),
@@ -63,7 +63,7 @@ function ContactPage() {
           onChange={(e) => setFirstName(e.target.value)}
           value={firstName}
           type="text"
-          name="first-Name"
+          name="first_name"
           placeholder="First Name"
           required
           minLength="2"
@@ -72,7 +72,7 @@ function ContactPage() {
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           type="text"
-          name="last-Name"
+          name="last_name"
           placeholder="Last Name"
           required
           minLength="2"
