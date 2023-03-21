@@ -43,7 +43,7 @@
 
 @media (min-width: 900px) {
   .hero-container {
-    height: calc(100vh - 120px);
+    height: calc(100vh - var(--mobile-nav-height));
     background-image: url("../../assets/white-rose.jpg");
   }
 

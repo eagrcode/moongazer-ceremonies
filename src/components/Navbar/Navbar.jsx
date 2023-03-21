@@ -12,6 +12,9 @@ import { Hamburger } from "../index";
 // CSS
 import "./Navbar.css";
 
+// logo
+import Logo from "../../assets/logos/Moon_White.png";
+
 function Navbar() {
   // state
   const [isOpen, setIsOpen] = useState(false);
@@ -49,13 +52,17 @@ function Navbar() {
     <>
       <header>
         <nav onMouseLeave={() => setIsSubMenuOpen(false)} className="navbar">
-          <NavLink onClick={isOpen ? toggleMenu : undefined} to="/" className="logo">
-            MoonGazer Ceremonies
-          </NavLink>
+          <div className="logo-container">
+            <div className="logo-img-container">
+              <img src={Logo} />
+            </div>
+            <span id="logo-text">MoonGazer Ceremonies</span>
+          </div>
+
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
           <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
-            <li className={`nav-item ${isOpen ? "active" : ""}`}>
+            <li className={`nav-item ${isOpen ? "active" : "main"}`}>
               <NavLink
                 onMouseEnter={() => setIsSubMenuOpen(false)}
                 onClick={isOpen ? toggleMenu : undefined}

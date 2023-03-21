@@ -43,9 +43,7 @@ function FuneralPage() {
               Full Support, help and guidance with all decisions about the ceremony from my
               professional knowledge.
             </li>
-            <li className="wedding-list-item">
-              A beautifully presented souvenir script as a keepsake of the day.
-            </li>
+
             <li className="wedding-list-item">
               Full bespoke delivery script written to your choices and any elements from my
               recommendation (poems, readings, quotes, music).

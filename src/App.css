@@ -13,9 +13,9 @@
   --secondary-text-color: hsl(0, 0%, 100%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);
   --primary-text-container-color: hsl(200, 75%, 100%);
-  --mobile-nav-height: 3.5rem;
+  --mobile-nav-height: 80px;
   --lg-nav-height: 8rem;
-  --padding-mobile: 1.5rem;
+  --padding-mobile: 1rem;
   --padding: 5rem;
   --nav-padding-lg: 1rem 3rem;
   --container-shadow: rgba(80, 80, 80, 0.2) 0px 2px 8px 0px;
@@ -72,6 +72,7 @@ q {
 
 img {
   width: 100%;
+  height: 100%;
 }
 
 /* ul {
