@@ -2,4 +2,12 @@
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   /* text-shadow: 1px 1px 3px rgba(80, 80, 80, 0.3); */
+  position: relative;
+}
+
+.logo-container.why {
+  width: 40px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }

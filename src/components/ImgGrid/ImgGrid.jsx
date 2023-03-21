@@ -5,7 +5,7 @@ import "./ImgGrid.css";
 import Grid1 from "../../assets/Grid-1.jpg";
 import Grid2 from "../../assets/Grid-2.jpg";
 import Grid3 from "../../assets/Grid-3.jpg";
-import Grid4 from "../../assets/cake-table.jpg";
+import Grid4 from "../../assets/Grid-4.jpg";
 
 function ImgGrid() {
   return (

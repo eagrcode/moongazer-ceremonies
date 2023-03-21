@@ -1,5 +1,6 @@
 footer {
   background-color: var(--primary-text-container-color);
+  position: relative;
 }
 
 .footer-navbar {
@@ -36,6 +37,19 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.footer-social-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo-container.footer {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
 }
 
 .hitched-container {

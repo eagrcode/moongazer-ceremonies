@@ -7,6 +7,9 @@ import { MainBtn } from "../../../../components";
 // libraries
 import { Link } from "react-router-dom";
 
+// logo
+import Logo from "../../../../assets/logos/Hare_Navy.png";
+
 function Why({ title }) {
   return (
     <section className="content-section why">
@@ -23,6 +26,9 @@ function Why({ title }) {
           <MainBtn text={"Ceremonies"} type={"btn-dark"} />
         </Link>
       </div>
+      {/* <div className="logo-container why">
+        <img src={Logo} />
+      </div> */}
     </section>
   );
 }

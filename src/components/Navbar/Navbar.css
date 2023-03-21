@@ -26,9 +26,10 @@ header {
 }
 
 #logo-text {
+  font-family: "Dancing Script", cursive;
   color: var(--secondary-text-color);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav-menu {
@@ -129,7 +130,7 @@ header {
   .navbar {
     padding: var(--nav-padding-lg);
     gap: 1rem;
-    height: auto;
+    height: var(--lg-nav-height);
     position: relative;
   }
 
@@ -146,7 +147,13 @@ header {
     transform: translate(0);
   }
 
-  .logo {
+  .logo-img-container {
+    width: 60px;
+  }
+
+  #logo-text {
+    color: var(--secondary-text-color);
+
     font-size: 2rem;
   }
 
@@ -157,25 +164,12 @@ header {
     position: relative;
 
     border-radius: 2px;
+    opacity: 0.8;
+    transition: all ease-out 0.1s;
+  }
+
+  .nav-item:hover {
     opacity: 1;
-  }
-
-  .nav-item.main::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 1px;
-    left: 0;
-    background-color: var(--secondary-text-color);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .nav-item.main:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
   }
 
   .nav-link {
@@ -204,11 +198,9 @@ header {
   .ceremony-dropdown {
     position: absolute;
     background-color: var(--accent-color);
-    opacity: 0.95;
-
     margin: 0;
     top: 0;
-    margin-top: 49px;
+    margin-top: 72px;
     /* margin-top: 100%;  */
     /* margin: calc(var(--lg-nav-height) - var(--padding-mobile)) var(--padding-mobile) 0 100%; */
     /* margin-left: 100%;
