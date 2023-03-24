@@ -2,10 +2,9 @@
 import "./About.css";
 
 // components
-import { MainBtn } from "../../../../components";
+import { Hare } from "../../../../components";
 
 // libraries
-import { Link } from "react-router-dom";
 
 // images
 import Dee from "../../../../assets/dee-robinson-celebrant.jpeg";
@@ -33,6 +32,7 @@ function TextContainer({ title }) {
           </p>
         </div>
       </div>
+      <Hare side={"right"} />
     </section>
   );
 }

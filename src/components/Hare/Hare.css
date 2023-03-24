@@ -1,0 +1,27 @@
+.hare {
+  position: absolute;
+  bottom: 1rem;
+  width: 30px;
+}
+
+.hare.right {
+  right: 1rem;
+}
+
+.hare.left {
+  left: 1rem;
+}
+
+@media (min-width: 900px) {
+  .hare {
+    width: 40px;
+  }
+
+  .hare.right {
+    right: 3rem;
+  }
+
+  .hare.left {
+    left: 3rem;
+  }
+}

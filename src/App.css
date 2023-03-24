@@ -82,6 +82,7 @@ img {
   background-color: var(--primary-bg-color);
   padding: var(--padding) var(--padding-mobile);
   display: flex;
+  position: relative;
 
   flex-direction: column;
   align-items: center;
@@ -105,6 +106,7 @@ img {
 } */
 
 .text-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
