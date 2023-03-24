@@ -25,6 +25,10 @@
   .ceremony-card .image-container {
     max-height: 250px;
   }
+
+  .ceremony-card {
+    min-width: 350px;
+  }
   .ceremony-card:hover {
     transform: scale(1.03);
   }

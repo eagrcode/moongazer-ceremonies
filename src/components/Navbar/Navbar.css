@@ -75,6 +75,7 @@ header {
   text-decoration: none;
   color: var(--secondary-text-color);
   font-size: 1.4rem;
+  font-weight: 400;
   width: 100%;
 }
 

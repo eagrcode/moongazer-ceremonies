@@ -4,6 +4,9 @@ import testimonials from "../../testimonials";
 // react
 import { useState } from "react";
 
+// components
+import { Hare } from "../../components";
+
 // styles
 import "./TestimonialSwiper.css";
 
@@ -25,7 +28,7 @@ function TestimonialSwiper() {
       modules={[Autoplay, Pagination]}
       slidesPerView={1}
       loop={true}
-      autoplay={{ delay: 12000, disableOnInteraction: false }}
+      autoplay={{ delay: 10000, disableOnInteraction: false }}
     >
       {testimonialsData.map((item) => (
         <SwiperSlide key={item.id}>
@@ -39,6 +42,8 @@ function TestimonialSwiper() {
           </div>
         </SwiperSlide>
       ))}
+
+      <Hare side={"left"} color={"white"} />
     </Swiper>
   );
 }
