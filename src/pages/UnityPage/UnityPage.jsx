@@ -2,7 +2,7 @@
 import "./UnityPage.css";
 
 // components
-import { MainBtn } from "../../components";
+import { MainBtn, Hare } from "../../components";
 
 function UnityPage() {
   return (
@@ -49,6 +49,7 @@ function UnityPage() {
           </ul>
           <MainBtn text={"Contact Me"} type={"btn-light"} />
         </div>
+        <Hare side={"right"} color={"white"} />
       </section>
     </>
   );

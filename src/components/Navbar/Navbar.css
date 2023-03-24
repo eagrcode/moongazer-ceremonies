@@ -164,16 +164,15 @@ header {
     width: auto;
     position: relative;
     border-radius: 2px;
-    opacity: 1;
+    opacity: 0.8;
     transition: all ease-out 0.1s;
   }
 
   .nav-link {
     font-size: 1.2rem;
-    opacity: 0.8;
   }
 
-  .nav-link:hover {
+  .nav-item:hover {
     opacity: 1;
   }
 

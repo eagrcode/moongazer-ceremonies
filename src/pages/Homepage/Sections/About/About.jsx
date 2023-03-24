@@ -1,9 +1,6 @@
 // styles
 import "./About.css";
 
-// components
-import { Hare } from "../../../../components";
-
 // libraries
 
 // images
@@ -32,7 +29,6 @@ function TextContainer({ title }) {
           </p>
         </div>
       </div>
-      <Hare side={"right"} />
     </section>
   );
 }

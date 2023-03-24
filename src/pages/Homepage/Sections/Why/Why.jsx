@@ -23,6 +23,7 @@ function Why({ title }) {
           <MainBtn text={"Ceremonies"} type={"btn-dark"} />
         </Link>
       </div>
+      <Hare side={"right"} color={"white"} />
     </section>
   );
 }

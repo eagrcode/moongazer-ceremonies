@@ -2,7 +2,7 @@
 import "./WeddingPage.css";
 
 // components
-import { MainBtn } from "../../components";
+import { MainBtn, Hare } from "../../components";
 
 function WeddingPage() {
   return (
@@ -39,6 +39,7 @@ function WeddingPage() {
           </ul>
           <MainBtn text={"Contact Me"} type={"btn-light"} />
         </div>
+        <Hare side={"right"} color={"white"} />
       </section>
     </>
   );

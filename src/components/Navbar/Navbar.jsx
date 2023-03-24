@@ -4,7 +4,8 @@ import { useState } from "react";
 // libraries
 import { Outlet, NavLink } from "react-router-dom";
 import { BsChevronDown } from "react-icons/bs";
-import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { FaFacebookSquare } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 // components
 import { Hamburger } from "../index";
@@ -52,12 +53,14 @@ function Navbar() {
     <>
       <header>
         <nav onMouseLeave={() => setIsSubMenuOpen(false)} className="navbar">
-          <div className="logo-container">
-            <div className="logo-img-container">
-              <img src={Logo} />
+          <NavLink to="/">
+            <div className="logo-container">
+              <div className="logo-img-container">
+                <img src={Logo} />
+              </div>
+              <span id="logo-text">MoonGazer Ceremonies</span>
             </div>
-            <span id="logo-text">MoonGazer Ceremonies</span>
-          </div>
+          </NavLink>
 
           <Hamburger toggleMenu={toggleMenu} isOpen={isOpen} />
 
@@ -160,7 +163,7 @@ function Navbar() {
                   target="_blank"
                   href="https://www.instagram.com/moongazerceremonies/"
                 >
-                  <AiFillInstagram size={30} style={{ color: "var(--secondary-text-color)" }} />
+                  <AiFillInstagram size={34} style={{ color: "var(--secondary-text-color)" }} />
                 </a>
               </li>
               <li className={`nav-item ${isOpen ? "active" : ""}`}>
@@ -169,7 +172,7 @@ function Navbar() {
                   target="_blank"
                   href="https://www.facebook.com/moongazerceremonies"
                 >
-                  <AiFillFacebook size={30} style={{ color: "var(--secondary-text-color)" }} />
+                  <FaFacebookSquare size={30} style={{ color: "var(--secondary-text-color)" }} />
                 </a>
               </li>
             </ul>
