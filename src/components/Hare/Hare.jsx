@@ -8,7 +8,7 @@ import HareWhite from "../../assets/logos/Hare_White.png";
 function Hare({ side, color }) {
   return (
     <div className={`hare ${side}`}>
-      <img src={color === "white" ? HareWhite : HareNavy} />
+      <img src={color === "white" ? HareWhite : HareNavy} alt="hare-logo-moongazer-ceremonies" />
     </div>
   );
 }

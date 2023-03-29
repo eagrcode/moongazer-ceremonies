@@ -56,7 +56,7 @@ function Navbar() {
           <NavLink to="/">
             <div className="logo-container">
               <div className="logo-img-container">
-                <img src={Logo} />
+                <img src={Logo} alt="hare-logo-moongazer-ceremonies" />
               </div>
               <span id="logo-text">MoonGazer Ceremonies</span>
             </div>
@@ -87,7 +87,7 @@ function Navbar() {
                 >
                   Ceremonies
                 </NavLink>
-                <button id="dropdown-btn">
+                <button id="dropdown-btn" type="button" aria-label="toggle sub-menu">
                   <BsChevronDown
                     onClick={toggleSubMenu}
                     size={20}
@@ -104,7 +104,7 @@ function Navbar() {
                     to="/wedding"
                     className="nav-link dropdown"
                   >
-                    Weddings
+                    Wedding
                   </NavLink>
                 </li>
                 <li className="nav-item sub">
@@ -159,18 +159,22 @@ function Navbar() {
             <ul className="social-links-menu">
               <li className={`nav-item ${isOpen ? "active" : ""}`}>
                 <a
+                  className="nav-link"
                   rel="nofollow"
                   target="_blank"
                   href="https://www.instagram.com/moongazerceremonies/"
+                  aria-label="link to moongazer ceremonies instagram"
                 >
                   <AiFillInstagram size={34} style={{ color: "var(--secondary-text-color)" }} />
                 </a>
               </li>
               <li className={`nav-item ${isOpen ? "active" : ""}`}>
                 <a
+                  className="nav-link"
                   rel="nofollow"
                   target="_blank"
-                  href="https://www.facebook.com/moongazerceremonies"
+                  to="https://www.facebook.com/moongazerceremonies"
+                  aria-label="link to moongazer ceremonies facebook"
                 >
                   <FaFacebookSquare size={30} style={{ color: "var(--secondary-text-color)" }} />
                 </a>

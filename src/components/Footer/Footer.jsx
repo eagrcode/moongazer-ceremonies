@@ -9,9 +9,6 @@ import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import AOIC from "../../assets/AOIC-logo.jpg";
 import CCL from "../../assets/CCL-logo.jpg";
 
-// logo
-import Logo from "../../assets/logos/Hare_Navy.png";
-
 function Footer() {
   return (
     <footer>
@@ -38,10 +35,20 @@ function Footer() {
           </li>
         </ul>
         <div className="footer-social-container">
-          <a rel="nofollow" target="_blank" href="https://www.instagram.com/moongazerceremonies/">
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://www.instagram.com/moongazerceremonies/"
+            aria-label="link to moongazer ceremonies instagram"
+          >
             <AiFillInstagram size={30} style={{ color: "var(--accent-color)" }} />
           </a>
-          <a rel="nofollow" target="_blank" href="https://www.facebook.com/moongazerceremonies">
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://www.facebook.com/moongazerceremonies"
+            aria-label="link to moongazer ceremonies facebook"
+          >
             <AiFillFacebook size={30} style={{ color: "var(--accent-color)" }} />
           </a>
         </div>
@@ -69,9 +76,6 @@ function Footer() {
           </div>
         </div>
       </nav>
-      {/* <div className="logo-container footer">
-        <img src={Logo} />
-      </div> */}
     </footer>
   );
 }

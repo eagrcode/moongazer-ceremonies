@@ -5,13 +5,12 @@ import { ImageContainer, MainBtn } from "../../components";
 import { Link } from "react-router-dom";
 
 // styles
-
 import "./CeremonyCard.css";
 
-function CeremonyCard({ title, img, path }) {
+function CeremonyCard({ title, img, path, alt }) {
   return (
     <div className="ceremony-card">
-      <ImageContainer img={img} />
+      <ImageContainer img={img} alt={alt} />
       <h1>{title}</h1>
       <Link to={`${path}`}>
         <MainBtn text={"Learn More"} type={"btn-dark"} />

@@ -30,7 +30,7 @@ function Planning({ title }) {
             <MainBtn text={"Contact Me"} type={"btn-dark"} />
           </Link>
         </div>
-        <img src={List} />
+        <img src={List} alt="wedding-todo-list" />
       </div>
     </section>
   );

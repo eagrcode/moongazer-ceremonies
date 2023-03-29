@@ -12,16 +12,16 @@ function ImgGrid() {
     <section className="content-section img-grid">
       <div className="img-grid">
         <div className="img-grid-item">
-          <img src={Grid1} />
+          <img src={Grid1} alt="barn-wedding" />
         </div>
         <div className="img-grid-item">
-          <img src={Grid2} />
+          <img src={Grid2} alt="girl-wedding-flowers" />
         </div>
         <div className="img-grid-item">
-          <img src={Grid3} />
+          <img src={Grid3} alt="wedding-baby" />
         </div>
         <div className="img-grid-item">
-          <img src={Grid4} />
+          <img src={Grid4} alt="wedding-cake-table" />
         </div>
       </div>
     </section>
