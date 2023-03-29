@@ -3,9 +3,10 @@ import { useState } from "react";
 
 // libraries
 import { Outlet, NavLink } from "react-router-dom";
-import { BsChevronDown } from "react-icons/bs";
-import { FaFacebookSquare } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // components
 import { Hamburger } from "../index";
@@ -87,13 +88,13 @@ function Navbar() {
                 >
                   Ceremonies
                 </NavLink>
-                <button id="dropdown-btn" type="button" aria-label="toggle sub-menu">
-                  <BsChevronDown
-                    onClick={toggleSubMenu}
-                    size={20}
-                    id="dropdown-icon"
-                    style={{ color: "white" }}
-                  />
+                <button
+                  id="dropdown-btn"
+                  type="button"
+                  aria-label="toggle sub-menu"
+                  onClick={toggleSubMenu}
+                >
+                  <FontAwesomeIcon icon={faChevronDown} size="xl" style={{ color: "white" }} />
                 </button>
               </div>
 
@@ -165,7 +166,11 @@ function Navbar() {
                   href="https://www.instagram.com/moongazerceremonies/"
                   aria-label="link to moongazer ceremonies instagram"
                 >
-                  <AiFillInstagram size={34} style={{ color: "var(--secondary-text-color)" }} />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="xl"
+                    style={{ color: "var(--secondary-text-color)" }}
+                  />
                 </a>
               </li>
               <li className={`nav-item ${isOpen ? "active" : ""}`}>
@@ -176,7 +181,11 @@ function Navbar() {
                   to="https://www.facebook.com/moongazerceremonies"
                   aria-label="link to moongazer ceremonies facebook"
                 >
-                  <FaFacebookSquare size={30} style={{ color: "var(--secondary-text-color)" }} />
+                  <FontAwesomeIcon
+                    icon={faFacebookSquare}
+                    size="xl"
+                    style={{ color: "var(--secondary-text-color)" }}
+                  />
                 </a>
               </li>
             </ul>

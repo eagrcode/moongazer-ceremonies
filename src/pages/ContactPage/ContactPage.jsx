@@ -2,7 +2,6 @@
 import "./ContactPage.css";
 
 // icons
-import { MdEmail } from "react-icons/md";
 
 // react
 import { useState } from "react";

@@ -7,15 +7,17 @@ import { Hero, ImageContainer, ImgGrid, TestimonialSwiper } from "../../componen
 // sections
 import { About, Planning, Why } from "../../pages";
 
-// images
-import Jump from "../../assets/Jump cropped.jpg";
+// image paths
+import imagePaths from "../../imagesAWS";
 
 function Homepage() {
+  const { jump } = imagePaths;
+
   return (
     <>
       <Hero />
       <About title={"About Me"} />
-      <ImageContainer img={Jump} alt="wedding-men-jump" />
+      <ImageContainer img={jump} alt="wedding-men-jump" />
       <Why title={"Why Choose A Celebrant?"} />
       <ImgGrid />
       <Planning title={"Planning"} />

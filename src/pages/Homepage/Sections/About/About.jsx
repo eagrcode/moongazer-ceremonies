@@ -4,7 +4,7 @@ import "./About.css";
 // libraries
 
 // images
-import Dee from "../../../../assets/dee-robinson-celebrant.jpeg";
+import Dee from "../../../../assets/dee-robinson-celebrant.jpg";
 
 function TextContainer({ title }) {
   return (

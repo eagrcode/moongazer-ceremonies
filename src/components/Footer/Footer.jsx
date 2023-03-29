@@ -3,7 +3,8 @@ import "./Footer.css";
 
 // libraries
 import { NavLink } from "react-router-dom";
-import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 // images
 import AOIC from "../../assets/AOIC-logo.jpg";
@@ -41,7 +42,11 @@ function Footer() {
             href="https://www.instagram.com/moongazerceremonies/"
             aria-label="link to moongazer ceremonies instagram"
           >
-            <AiFillInstagram size={30} style={{ color: "var(--accent-color)" }} />
+            <FontAwesomeIcon
+              icon={faInstagram}
+              size="xl"
+              style={{ color: "var(--accent-color)" }}
+            />
           </a>
           <a
             rel="nofollow"
@@ -49,7 +54,11 @@ function Footer() {
             href="https://www.facebook.com/moongazerceremonies"
             aria-label="link to moongazer ceremonies facebook"
           >
-            <AiFillFacebook size={30} style={{ color: "var(--accent-color)" }} />
+            <FontAwesomeIcon
+              icon={faFacebookSquare}
+              size="xl"
+              style={{ color: "var(--accent-color)" }}
+            />
           </a>
         </div>
 
