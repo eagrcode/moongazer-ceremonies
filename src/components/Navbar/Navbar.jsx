@@ -178,7 +178,7 @@ function Navbar() {
                   className="nav-link"
                   rel="nofollow"
                   target="_blank"
-                  to="https://www.facebook.com/moongazerceremonies"
+                  href="https://www.facebook.com/moongazerceremonies"
                   aria-label="link to moongazer ceremonies facebook"
                 >
                   <FontAwesomeIcon
