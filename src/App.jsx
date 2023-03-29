@@ -23,6 +23,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 // styles
 import "./App.css";
 import "./normalize.css";
+import "./fonts.css";
 
 function App() {
   return (

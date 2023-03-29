@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Dancing Script";
+  font-weight: 400;
+  src: url("./assets/fonts/DancingScript-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  font-weight: 500;
+  src: url("./assets/fonts/DancingScript-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  font-weight: 600;
+  src: url("./assets/fonts/DancingScript-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  font-weight: 700;
+  src: url("./assets/fonts/DancingScript-Bold.woff") format("woff");
+}
