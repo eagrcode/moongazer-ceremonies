@@ -2,6 +2,8 @@
 import "./ContactPage.css";
 
 // icons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 // react
 import { useState } from "react";
@@ -52,7 +54,7 @@ function ContactPage() {
         </p>
         <div className="contact-details-container">
           <div className="cdc-row">
-            <MdEmail size={20} /> moongazerceremonies@gmail.com
+            <FontAwesomeIcon icon={faEnvelope} size="xl" /> moongazerceremonies@gmail.com
           </div>
         </div>
       </div>
