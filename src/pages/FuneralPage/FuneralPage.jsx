@@ -3,6 +3,7 @@ import "./FuneralPage.css";
 
 // components
 import { MainBtn, Hare } from "../../components";
+import { Link } from "react-router-dom";
 
 function FuneralPage() {
   return (
@@ -52,7 +53,9 @@ function FuneralPage() {
             <li className="wedding-list-item">Funeral services are for a fixed fee of £200.</li>
             <li className="wedding-list-item">Scattering of Ashes Ceremony £100</li>
           </ul>
-          <MainBtn text={"Contact Me"} type={"btn-light"} />
+          <Link to="/contact">
+            <MainBtn text={"Contact Me"} type={"btn-light"} />
+          </Link>
         </div>
         <Hare side={"right"} color={"white"} />
       </section>

@@ -4,6 +4,9 @@ import "./UnityPage.css";
 // components
 import { MainBtn, Hare } from "../../components";
 
+// react-router
+import { Link } from "react-router-dom";
+
 function UnityPage() {
   return (
     <>
@@ -47,7 +50,9 @@ function UnityPage() {
             </li>
             <li className="wedding-list-item">Packages from £650</li>
           </ul>
-          <MainBtn text={"Contact Me"} type={"btn-light"} />
+          <Link to="/contact">
+            <MainBtn text={"Contact Me"} type={"btn-light"} />
+          </Link>
         </div>
         <Hare side={"right"} color={"white"} />
       </section>

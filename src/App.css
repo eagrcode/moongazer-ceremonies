@@ -2,7 +2,7 @@
 :root {
   --primary-bg-color: #f3fbfc;
   --secondary-bg-color: #2d3353;
-  --accent-color: hsl(189, 50%, 60%);
+  --accent-color: hsl(189, 50%, 55%);
   --primary-text-color: hsl(233, 21%, 10%);
   --secondary-text-color: hsl(0, 0%, 100%);
   --main-btn-color: hsl(176, 76%, 20%, 0.7);

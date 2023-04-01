@@ -4,6 +4,9 @@ import "./NamingPage.css";
 // components
 import { MainBtn, Hare } from "../../components";
 
+// react-router
+import { Link } from "react-router-dom";
+
 function NamingPage() {
   return (
     <>
@@ -40,7 +43,9 @@ function NamingPage() {
             </li>
             <li className="wedding-list-item">Packages from £350</li>
           </ul>
-          <MainBtn text={"Contact Me"} type={"btn-light"} />
+          <Link to="/contact">
+            <MainBtn text={"Contact Me"} type={"btn-light"} />
+          </Link>
         </div>
         <Hare side={"right"} color={"white"} />
       </section>
