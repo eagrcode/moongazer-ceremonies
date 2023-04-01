@@ -19,13 +19,19 @@ import { Navbar, Footer } from "./components";
 
 // utils
 import ScrollToTop from "./utils/ScrollToTop";
+import Redirect from "./Redirect";
 
 // styles
 import "./App.css";
 import "./normalize.css";
 import "./fonts.css";
 
+// context
+import { useSubmitted } from "./context/SubmittedContext";
+
 function App() {
+  const { isSubmitted } = useSubmitted();
+
   return (
     <>
       <ScrollToTop />
@@ -39,7 +45,7 @@ function App() {
           <Route path="naming" element={<NamingPage />} />
           <Route path="funeral" element={<FuneralPage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="success" element={<SuccessPage />} />
+          <Route path="success" element={isSubmitted ? <SuccessPage /> : <Redirect />} />
         </Route>
       </Routes>
       <Footer />

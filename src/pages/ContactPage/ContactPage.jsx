@@ -8,6 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 // react
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSubmitted } from "../../context/SubmittedContext";
 
 function ContactPage() {
   // state
@@ -15,6 +16,8 @@ function ContactPage() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const { isSubmitted, setIsSubmitted } = useSubmitted();
 
   const navigate = useNavigate();
 
@@ -41,6 +44,7 @@ function ContactPage() {
     setLastName("");
     setEmail("");
     setMessage("");
+    setIsSubmitted(true);
     navigate("/success");
   };
 
