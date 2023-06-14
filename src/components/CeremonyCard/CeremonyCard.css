@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  max-width: 400px;
+  width: 100%;
+
   background-color: var(--primary-text-container-color);
   padding: 0 0 var(--padding-mobile) 0;
   border-radius: var(--container-radius);
@@ -24,10 +25,6 @@
 @media (min-width: 900px) {
   .ceremony-card .image-container {
     max-height: 250px;
-  }
-
-  .ceremony-card {
-    min-width: 350px;
   }
 
   .ceremony-card:hover {

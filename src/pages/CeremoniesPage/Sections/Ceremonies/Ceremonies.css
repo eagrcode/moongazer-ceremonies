@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  max-width: 50rem;
+  width: 100%;
+  max-width: 30rem;
 }
 
 /* .ceremonies-grid .image-container {
@@ -12,5 +13,6 @@
 @media (min-width: 900px) {
   .ceremonies-grid {
     grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
   }
 }
