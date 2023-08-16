@@ -8,3 +8,7 @@
     font-size: 1.2rem;
   }
 }
+
+.text-container h3 {
+  align-self: flex-start;
+}
