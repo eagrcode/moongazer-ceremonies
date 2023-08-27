@@ -17,7 +17,7 @@ const testimonials = [
   {
     id: 3,
     text: `We would highly recommend Dee to anyone we know; she really made the effort to get to know us as much as possible and to make sure that we were completely happy with everything.`,
-    author: `V. Fraser`,
+    author: `Nick & Laura`,
   },
 ];
 
