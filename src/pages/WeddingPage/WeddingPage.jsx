@@ -38,7 +38,7 @@ function WeddingPage() {
             <li className="wedding-list-item">
               Overnight accommodation and travel are not included.
             </li>
-            <li className="wedding-list-item">Packages from £650</li>
+            <li className="wedding-list-item">Packages from £750</li>
           </ul>
           <Link to="/contact">
             <MainBtn text={"Contact Me"} type={"btn-light"} />
