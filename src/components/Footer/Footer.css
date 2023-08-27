@@ -53,7 +53,7 @@ footer {
 }
 
 .hitched-container {
-  width: 100px;
+  width: 80px;
   height: 50px;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,12 @@ footer {
 }
 
 .aoic-container {
-  width: 50px;
+  width: 40px;
   display: flex;
   align-items: center;
+}
+
+.fcc-container {
+  display: flex;
+  width: 40px;
 }

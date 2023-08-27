@@ -9,6 +9,7 @@ import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icon
 // images
 import AOIC from "../../assets/AOIC-logo.jpg";
 import CCL from "../../assets/CCL-logo.jpg";
+import FCC from "../../assets/fcc-badge.png";
 
 function Footer() {
   return (
@@ -81,7 +82,10 @@ function Footer() {
           </div>
           <div className="hitched-container">
             <span>Trained by</span>
-            <img alt="Hitched.co.uk" src={CCL} />
+            <img alt="CCL cert" src={CCL} />
+          </div>
+          <div className="fcc-container">
+            <img alt="FCC cert" src={FCC} />
           </div>
         </div>
       </nav>
