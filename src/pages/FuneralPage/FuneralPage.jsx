@@ -69,7 +69,7 @@ function FuneralPage() {
             master of ceremonies on the day.
           </p>
           <h3>Your Own Funeral Wishes</h3>
-          <p className="section-content">
+          <p className="section-content" id="stubbornP">
             Have you ever considered what you would like said at your own funeral?
           </p>
           <p className="section-content">
