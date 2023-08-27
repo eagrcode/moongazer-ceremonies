@@ -14,6 +14,11 @@ const testimonials = [
     text: `Amazing service. You really helped me before, during and after our special day. Can’t recommend highly enough.`,
     author: `V. Fraser`,
   },
+  {
+    id: 3,
+    text: `We would highly recommend Dee to anyone we know; she really made the effort to get to know us as much as possible and to make sure that we were completely happy with everything.`,
+    author: `V. Fraser`,
+  },
 ];
 
 export default testimonials;
