@@ -18,6 +18,7 @@ function Homepage() {
   return (
     <>
       <Hero />
+
       <About title={"About Me"} />
       <ImageContainer img={jump} alt="wedding-men-jump" />
       <Why title={"Why Choose A Celebrant?"} />

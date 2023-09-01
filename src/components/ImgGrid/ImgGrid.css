@@ -5,10 +5,11 @@
 .img-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background-color: var(--accent-color);
 }
 
 .img-grid-item {
-  background-color: red;
 }
 
 .img-grid-item img {
