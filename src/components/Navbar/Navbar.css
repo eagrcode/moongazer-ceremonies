@@ -40,7 +40,7 @@ header {
   align-items: center;
   left: 0;
   gap: 1rem;
-  height: calc(100svh - var(--mobile-nav-height));
+  height: calc(100dvh - var(--mobile-nav-height));
   width: 100%;
   padding: 50% 0;
   background-color: var(--accent-color);

@@ -11,7 +11,7 @@ function CeremonyCard({ title, img, path, alt }) {
   return (
     <div className="ceremony-card">
       <ImageContainer img={img} alt={alt} />
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <Link to={`${path}`}>
         <MainBtn text={"Learn More"} type={"btn-dark"} />
       </Link>

@@ -1,12 +1,11 @@
 .content-section.img-grid {
-  padding: 0;
+  padding: 0 1rem;
 }
 
 .img-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
-  background-color: var(--accent-color);
+  gap: 0.5rem;
 }
 
 .img-grid-item {
@@ -15,6 +14,11 @@
 .img-grid-item img {
   height: 100%;
   filter: grayscale(100%);
+  border-radius: var(--container-radius);
+
+  /* &:hover {
+    filter: grayscale(0%);
+  } */
 }
 
 @media (min-width: 900px) {

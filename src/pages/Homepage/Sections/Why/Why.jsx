@@ -11,7 +11,7 @@ function Why({ title }) {
   return (
     <section className="content-section why">
       <div className="text-container">
-        <h2 className="section-heading">{title}</h2>
+        <h1 className="section-heading">{title}</h1>
         <p className="section-content">
           When you choose a celebrant, you have the freedom to hold your ceremony anywhere and at
           any time. You can choose to include symbolic elements like hand fasting, write your own
@@ -19,9 +19,9 @@ function Why({ title }) {
           the way, making your day as unique as you are.
         </p>
 
-        <Link className="link-btn" to={"/ceremonies"}>
+        {/* <Link className="link-btn" to={"/ceremonies"}>
           <MainBtn text={"Ceremonies"} type={"btn-dark"} />
-        </Link>
+        </Link> */}
       </div>
       <Hare side={"right"} color={"white"} />
     </section>

@@ -12,7 +12,7 @@ function TextContainer({ title }) {
       <div className="content-section-inner">
         <img id="dee-pic" src={Dee} alt="dee-robinson-moongazer-celebrant" />
         <div className="text-container">
-          <h2 className="section-heading">{title}</h2>
+          <h1 className="section-heading">{title}</h1>
           <p className="section-content">
             Although there is no formal requirement for a celebrant to undertake accredited
             training, it was really important to me, as a lifelong learner, to hone my craft and be

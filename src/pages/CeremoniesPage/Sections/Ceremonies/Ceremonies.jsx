@@ -15,7 +15,7 @@ function Ceremonies() {
   return (
     <section className="content-section ceremonies" id="ceremoniesTag">
       <div className="text-container">
-        <h2 className="section-heading">Ceremonies</h2>
+        <h1 className="section-heading">Ceremonies</h1>
         <div className="ceremonies-grid">
           <CeremonyCard
             title={"Weddings"}

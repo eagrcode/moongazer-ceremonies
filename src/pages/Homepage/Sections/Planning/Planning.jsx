@@ -15,7 +15,7 @@ function Planning({ title }) {
     <section className="content-section planning lrg">
       <div className="content-section-inner">
         <div className="text-container">
-          <h2 className="section-heading">{title}</h2>
+          <h1 className="section-heading">{title}</h1>
           <p className="section-content">
             Whatever your vision, I will work with you to create the ceremony of your dreams.
             Organising special moments in your life should be enjoyable, with minimal stress, and
