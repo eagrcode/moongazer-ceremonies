@@ -38,7 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navbar />}>
           <Route index element={<Homepage />} />
-          <Route path="ceremonies" element={<CeremoniesPage />} />
+          {/* <Route path="ceremonies" element={<CeremoniesPage />} /> */}
           <Route path="wedding" element={<WeddingPage />} />
           <Route path="renewal" element={<MarriageRenewalPage />} />
           <Route path="unity" element={<UnityPage />} />

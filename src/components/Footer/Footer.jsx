@@ -26,9 +26,9 @@ function Footer() {
             </NavLink>
           </li>
           <li className="nav-item footer">
-            <NavLink to="/ceremonies" className="nav-link footer">
+            <a href="#ceremoniesTag" className="nav-link footer">
               Ceremonies
-            </NavLink>
+            </a>
           </li>
           <li className="nav-item footer">
             <NavLink to="/contact" className="nav-link footer">
@@ -62,33 +62,40 @@ function Footer() {
             />
           </a>
         </div>
-
-        <div className="bottom-footer">
-          <div className="hitched-container">
-            <a
-              rel="nofollow"
-              target="_blank"
-              href="https://www.hitched.co.uk/wedding-celebrants/moon-gazer-ceremonies_322007.htm"
-              title="Hitched.co.uk"
-            >
-              <img
-                alt="Hitched.co.uk"
-                src="https://www.hitched.co.uk/images/sellos/partner--gg322007.png"
-              />
-            </a>
-          </div>
-          <div className="aoic-container">
-            <img src={AOIC} alt="AOIC-certification" />
-          </div>
-          <div className="hitched-container">
-            <span>Trained by</span>
-            <img alt="CCL cert" src={CCL} />
-          </div>
-          <div className="fcc-container">
-            <img alt="FCC cert" src={FCC} />
-          </div>
-        </div>
       </nav>
+      <div className="bottom-footer">
+        <div className="hitched-container">
+          <a
+            rel="nofollow"
+            target="_blank"
+            href="https://www.hitched.co.uk/wedding-celebrants/moon-gazer-ceremonies_322007.htm"
+            title="Hitched.co.uk"
+          >
+            <img
+              alt="Hitched.co.uk"
+              src="https://www.hitched.co.uk/images/sellos/partner--gg322007.png"
+            />
+          </a>
+        </div>
+        <div className="aoic-container">
+          <img src={AOIC} alt="AOIC-certification" />
+        </div>
+        <div className="hitched-container">
+          <span>Trained by</span>
+          <img alt="CCL cert" src={CCL} />
+        </div>
+        <div className="fcc-container">
+          <img alt="FCC cert" src={FCC} />
+        </div>
+      </div>
+      <div className="eagrcodeCon">
+        <p>
+          Created by{" "}
+          <a href="https://eagrcode.dev" target="_blank" style={{ textDecoration: "underline" }}>
+            eagrcode.dev
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }

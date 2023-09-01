@@ -1,6 +1,12 @@
 footer {
   background-color: var(--primary-text-container-color);
   position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem;
 }
 
 .footer-navbar {
@@ -8,8 +14,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--padding-mobile);
-  gap: 1rem;
+  gap: 5px;
 }
 
 .nav-link.footer-logo {
