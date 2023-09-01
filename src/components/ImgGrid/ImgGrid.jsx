@@ -8,6 +8,7 @@ import Grid3 from "../../assets/Grid-3.jpg";
 import Grid4 from "../../assets/Grid-4.jpg";
 
 function ImgGrid() {
+  console.log(Grid1);
   return (
     <section className="content-section img-grid">
       <div className="img-grid">

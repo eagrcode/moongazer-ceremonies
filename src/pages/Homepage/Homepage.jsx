@@ -4,6 +4,8 @@ import "./Homepage.css";
 // components
 import { Hero, ImageContainer, ImgGrid, TestimonialSwiper } from "../../components";
 
+import { Ceremonies } from "../../pages";
+
 // sections
 import { About, Planning, Why } from "../../pages";
 
@@ -19,6 +21,7 @@ function Homepage() {
       <About title={"About Me"} />
       <ImageContainer img={jump} alt="wedding-men-jump" />
       <Why title={"Why Choose A Celebrant?"} />
+      <Ceremonies />
       <ImgGrid />
       <Planning title={"Planning"} />
       <TestimonialSwiper />

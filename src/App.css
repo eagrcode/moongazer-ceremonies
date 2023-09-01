@@ -25,6 +25,7 @@
 html {
   font-size: 100%;
   letter-spacing: 0.5px;
+  scroll-padding-top: var(--lg-nav-height);
 }
 
 body {

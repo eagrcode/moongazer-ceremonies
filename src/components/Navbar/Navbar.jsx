@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // libraries
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -79,15 +79,15 @@ function Navbar() {
 
             <li className={`nav-item ${isOpen ? "active" : ""}`}>
               <div className="dropdown-top">
-                <NavLink
+                <a
                   onClick={isOpen ? toggleMenu : undefined}
                   onMouseEnter={() => setIsSubMenuOpen(true)}
-                  to="/ceremonies"
+                  href="#ceremoniesTag"
                   className="nav-link"
                   id="ceremonies-link"
                 >
                   Ceremonies
-                </NavLink>
+                </a>
                 <button
                   id="dropdown-btn"
                   type="button"

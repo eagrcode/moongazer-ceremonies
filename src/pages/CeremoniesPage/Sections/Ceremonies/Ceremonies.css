@@ -4,6 +4,8 @@
   grid-gap: 3rem;
   width: 100%;
   max-width: 30rem;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .ceremonies-grid .image-container {
