@@ -107,8 +107,8 @@ function FuneralPage() {
               recommendation (poems, readings, quotes, music).
             </li>
             <li className="wedding-list-item">Presentation script given after the funeral.</li>
-            <li className="wedding-list-item">Funeral services are for a fixed fee of £200.</li>
-            <li className="wedding-list-item">Scattering of Ashes Ceremony £100</li>
+            <li className="wedding-list-item">Funeral services are for a fixed fee of £235.</li>
+            <li className="wedding-list-item">Scattering of Ashes Ceremony £150</li>
           </ul>
           <Link to="/contact">
             <MainBtn text={"Contact Me"} type={"btn-light"} />
